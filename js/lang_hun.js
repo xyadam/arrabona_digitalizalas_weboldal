@@ -53,20 +53,20 @@ const LANG_HU = {
         subtitle: "Válassza ki az Önnek megfelelő csomagot",
         package1: {
             name: "Kezdő csomag",
-            range: "10 000 cédula alatt",
+            range: "1 - 10 000 cédula",
             price: "100",
             unit: "HUF / cédula"
         },
         package2: {
             name: "Közepes csomag",
-            range: "50 000 cédula alatt",
+            range: "10 000 - 50 000 cédula",
             price: "90",
             unit: "HUF / cédula",
             popular: "Népszerű"
         },
         package3: {
             name: "Nagyvállalati csomag",
-            range: "50 000 cédula felett",
+            range: "50 000+ cédula",
             price: "80",
             unit: "HUF / cédula"
         },

@@ -137,8 +137,19 @@ body {
 .hero {
     background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
     color: var(--white);
-    padding: 100px 0 80px;
-    text-align: center;
+    padding: 80px 0 80px;
+    overflow: hidden;
+}
+
+.hero-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: left;
 }
 
 .hero-title {
@@ -156,9 +167,8 @@ body {
 
 .hero-contact {
     display: flex;
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .contact-item {
@@ -181,6 +191,43 @@ body {
 
 .contact-link:hover {
     opacity: 0.8;
+}
+
+/* Hero Product Showcase with 3D Effect */
+.hero-image {
+    perspective: 1500px;
+}
+
+.product-showcase {
+    position: relative;
+    transform: rotateY(-15deg) rotateX(5deg);
+    transition: transform 0.5s ease;
+    animation: float 6s ease-in-out infinite;
+}
+
+.product-showcase:hover {
+    transform: rotateY(-10deg) rotateX(2deg) scale(1.02);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow:
+        -20px 20px 60px rgba(0, 0, 0, 0.3),
+        -40px 40px 100px rgba(0, 0, 0, 0.2),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    backdrop-filter: blur(10px);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: rotateY(-15deg) rotateX(5deg) translateY(0px);
+    }
+    50% {
+        transform: rotateY(-15deg) rotateX(5deg) translateY(-20px);
+    }
 }
 
 /* Section Styles */
@@ -737,6 +784,15 @@ section {
 }
 
 @media (max-width: 768px) {
+    .hero-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
@@ -746,8 +802,16 @@ section {
     }
 
     .hero-contact {
-        flex-direction: column;
-        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .product-showcase {
+        transform: rotateY(0deg) rotateX(0deg);
+        animation: none;
+    }
+
+    .product-showcase:hover {
+        transform: scale(1.02);
     }
 
     .section-title {

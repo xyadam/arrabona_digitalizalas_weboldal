@@ -53,20 +53,20 @@ const LANG_EN = {
         subtitle: "Choose the package that fits your needs",
         package1: {
             name: "Starter Package",
-            range: "Under 10,000 cards",
+            range: "1 - 10,000 cards",
             price: "100",
             unit: "HUF / card"
         },
         package2: {
             name: "Medium Package",
-            range: "Under 50,000 cards",
+            range: "10,000 - 50,000 cards",
             price: "90",
             unit: "HUF / card",
             popular: "Popular"
         },
         package3: {
             name: "Enterprise Package",
-            range: "Above 50,000 cards",
+            range: "50,000+ cards",
             price: "80",
             unit: "HUF / card"
         },
