@@ -19,7 +19,7 @@ const LANG_EN = {
         },
         export: {
             title: "Standard export",
-            desc: "Export to Excel and USMARC format, compatible with library management systems"
+            desc: "Export to Excel format with USMARC-numbered column headers, compatible with library management systems"
         }
     },
     workflow: {
@@ -28,23 +28,26 @@ const LANG_EN = {
         instruction: "Use the arrows or swipe to navigate between steps",
         step1: {
             title: "Import",
-            desc: "Import your library catalog cards from scanned images, PDF files, or external databases. The system automatically recognizes and extracts data.",
+            desc1: "Import your library catalog cards from scanned images, PDF files, or external databases.",
+            desc2: "The system automatically recognizes and extracts data.",
             item1: "Scanned catalog cards",
             item2: "PDF documents",
             item3: "External databases"
         },
         step2: {
             title: "Browse and Search",
-            desc: "Browse your cataloged data in the Katalógus Plusz system. View original scanned documents and use advanced search features.",
+            desc1: "Browse your cataloged data in the Katalógus Plusz system.",
+            desc2: "View original scanned documents and use advanced search features.",
             item1: "Browse catalog data",
             item2: "View original documents",
             item3: "Advanced search capabilities"
         },
         step3: {
             title: "Export",
-            desc: "Export your data to Excel or USMARC format. The exported files are compatible with most library management systems.",
+            desc1: "Export your data to Excel format with standard or USMARC-numbered column headers.",
+            desc2: "The exported files are compatible with most library management systems.",
             item1: "Excel format",
-            item2: "USMARC table format",
+            item2: "USMARC-numbered column headers",
             item3: "Compatible with library systems"
         }
     },

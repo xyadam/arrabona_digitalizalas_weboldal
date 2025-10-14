@@ -19,7 +19,7 @@ const LANG_HU = {
         },
         export: {
             title: "Szabványos export",
-            desc: "Export Excel és USMARC formátumba, kompatibilis könyvtári rendszerekkel"
+            desc: "Export Excel formátumba és USMARC számozott oszlopfejlécekkel, kompatibilis könyvtári rendszerekkel"
         }
     },
     workflow: {
@@ -28,23 +28,26 @@ const LANG_HU = {
         instruction: "Használja a nyilakat vagy húzza az ujjával a lépések közötti váltáshoz",
         step1: {
             title: "Importálás",
-            desc: "Importálja könyvtári katalóguscéduláit szkennelt képekből, PDF fájlokból vagy külső adatbázisokból. A rendszer automatikusan felismeri és kinyeri az adatokat.",
+            desc1: "Importálja könyvtári katalóguscéduláit szkennelt képekből, PDF fájlokból vagy külső adatbázisokból.",
+            desc2: "A rendszer automatikusan felismeri és kinyeri az adatokat.",
             item1: "Szkennelt katalóguscédulák",
             item2: "PDF dokumentumok",
             item3: "Külső adatbázisok"
         },
         step2: {
             title: "Böngészés és Keresés",
-            desc: "Böngéssze katalogizált adatait a Katalógus Plusz rendszerében. Tekintse meg az eredeti szkennelt dokumentumokat, használja a fejlett keresési funkciókat.",
+            desc1: "Böngéssze katalogizált adatait a Katalógus Plusz rendszerében.",
+            desc2: "Tekintse meg az eredeti szkennelt dokumentumokat, használja a fejlett keresési funkciókat.",
             item1: "Katalógus adatok böngészése",
             item2: "Eredeti dokumentumok megtekintése",
             item3: "Fejlett keresési lehetőségek"
         },
         step3: {
             title: "Exportálás",
-            desc: "Exportálja adatait Excel vagy USMARC formátumba. Az exportált fájlok kompatibilisek a legtöbb könyvtári kezelőrendszerrel.",
+            desc1: "Exportálja adatait Excel formátumba vagy USMARC számozott oszlopfejlécekkel.",
+            desc2: "Az exportált fájlok kompatibilisek a legtöbb könyvtári kezelőrendszerrel.",
             item1: "Excel formátum",
-            item2: "USMARC tábla formátum",
+            item2: "USMARC számozott oszlopfejlécek",
             item3: "Könyvtári rendszerekkel kompatibilis"
         }
     },
