@@ -41,7 +41,6 @@ const LANG_HU = {
     workflow: {
         title: "Hogyan működik?",
         subtitle: "Három egyszerű lépésben a digitális katalógusig",
-        instruction: "Használja a nyilakat vagy húzza az ujjával a lépések közötti váltáshoz",
         step1: {
             title: "Importálás és Digitalizálás",
             desc1: "Importáljuk az adatokat külső adatbázisokból vagy fájlokból, vagy digitalizáljuk szkennelt képekből és PDF-ekből.",

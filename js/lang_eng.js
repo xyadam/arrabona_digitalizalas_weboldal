@@ -41,7 +41,6 @@ const LANG_EN = {
     workflow: {
         title: "How does it work?",
         subtitle: "Three simple steps to your digital catalog",
-        instruction: "Use the arrows or swipe to navigate between steps",
         step1: {
             title: "Import and Digitization",
             desc1: "Import data from external databases or files, or digitize from scanned images and PDFs.",
