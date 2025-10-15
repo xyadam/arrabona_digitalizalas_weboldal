@@ -8,9 +8,11 @@ AOS.init({
 
 // Initialize Swiper
 const swiper = new Swiper('.workflowSwiper', {
-    slidesPerView: 1,
+    slidesPerView: 1.2,
+    centeredSlides: true,
     spaceBetween: 30,
-    loop: true,
+    loop: false,
+    initialSlide: 0,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -23,6 +25,23 @@ const swiper = new Swiper('.workflowSwiper', {
         enabled: true,
     },
     autoHeight: false,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            centeredSlides: true
+        },
+        640: {
+            slidesPerView: 1.1,
+            spaceBetween: 20,
+            centeredSlides: true
+        },
+        1024: {
+            slidesPerView: 1.2,
+            spaceBetween: 30,
+            centeredSlides: true
+        }
+    }
 });
 
 // Language Management

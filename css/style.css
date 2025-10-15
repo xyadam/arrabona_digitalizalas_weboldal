@@ -312,36 +312,50 @@ section {
 }
 
 .workflow-container {
-    margin-top: 3rem;
+    margin-top: 2rem;
     position: relative;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .workflowSwiper {
-    padding: 2rem 0 4rem;
+    padding: 1.5rem 0 3rem;
+    overflow: visible;
 }
 
 .workflow-step {
     background-color: var(--light-gray);
-    border-radius: 16px;
-    padding: 3rem 2rem;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
     height: auto;
     position: relative;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide {
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-slide-active {
+    opacity: 1;
 }
 
 .step-number {
     position: absolute;
-    top: -20px;
+    top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
     color: var(--white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
 }
@@ -351,10 +365,10 @@ section {
 }
 
 .step-image {
-    margin-bottom: 2rem;
-    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .step-img {
@@ -362,26 +376,27 @@ section {
     height: auto;
     display: block;
     background-color: var(--border-gray);
-    min-height: 300px;
+    min-height: 200px;
+    max-height: 300px;
     object-fit: cover;
 }
 
 .step-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-blue);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .step-desc {
     color: var(--gray);
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.4rem;
 }
 
 .step-desc:last-of-type {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .step-list {
@@ -391,11 +406,12 @@ section {
 }
 
 .step-list li {
-    padding: 0.5rem 0;
+    padding: 0.3rem 0;
     color: var(--dark-gray);
     font-weight: 500;
     position: relative;
-    padding-left: 2rem;
+    padding-left: 1.8rem;
+    font-size: 0.9rem;
 }
 
 .step-list li::before {
@@ -404,24 +420,24 @@ section {
     left: 0;
     color: var(--primary-blue);
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-/* Swiper Navigation - More Prominent */
+/* Swiper Navigation - More Compact */
 .swiper-button-next,
 .swiper-button-prev {
     color: var(--white);
     background-color: var(--primary-blue);
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    box-shadow: 0 6px 20px rgba(30, 58, 138, 0.4);
+    box-shadow: 0 4px 16px rgba(30, 58, 138, 0.3);
     transition: all 0.3s ease;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 900;
 }
 
@@ -429,16 +445,16 @@ section {
 .swiper-button-prev:hover {
     background-color: var(--dark-blue);
     transform: scale(1.1);
-    box-shadow: 0 8px 24px rgba(30, 58, 138, 0.5);
+    box-shadow: 0 6px 20px rgba(30, 58, 138, 0.4);
 }
 
 .swiper-pagination {
-    bottom: 10px !important;
+    bottom: 5px !important;
 }
 
 .swiper-pagination-bullet {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     background-color: var(--primary-blue);
     opacity: 0.4;
     transition: all 0.3s ease;
@@ -447,16 +463,16 @@ section {
 .swiper-pagination-bullet-active {
     background-color: var(--primary-blue);
     opacity: 1;
-    width: 35px;
-    border-radius: 7px;
+    width: 30px;
+    border-radius: 6px;
 }
 
 /* Swiper Instructions */
 .workflow-instructions {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     color: var(--gray);
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
@@ -860,13 +876,22 @@ section {
 
     .swiper-button-next,
     .swiper-button-prev {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
 
     .swiper-button-next::after,
     .swiper-button-prev::after {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .workflow-step {
+        padding: 1.5rem 1rem;
+    }
+
+    .step-img {
+        min-height: 150px;
+        max-height: 250px;
     }
 }
 
@@ -888,11 +913,36 @@ section {
     }
 
     .workflow-step {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1rem;
     }
 
     .step-title {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .step-desc {
+        font-size: 0.85rem;
+    }
+
+    .step-list li {
+        font-size: 0.85rem;
+        padding: 0.25rem 0;
+    }
+
+    .step-img {
+        min-height: 120px;
+        max-height: 200px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 16px;
     }
 
     .pricing-header {
