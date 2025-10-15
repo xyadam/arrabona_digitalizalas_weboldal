@@ -1,7 +1,7 @@
 const LANG_HU = {
     hero: {
         title: "Katalógus Plusz",
-        subtitle: "Ön csak elküldi a katalóguscédulákat, mi digitalizáljuk és átadjuk a teljes adatbázist a kezelőszoftverrel"
+        subtitle: "Professzionális könyvtári katalógus digitalizálás és kezelő szoftver"
     },
     results: {
         intro: "A program egyaránt alkalmas muzeális régi könyv-állomány és modern könyvek katalógus-céduláinak feldolgozására.",

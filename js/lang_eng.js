@@ -1,7 +1,7 @@
 const LANG_EN = {
     hero: {
         title: "Katalógus Plusz",
-        subtitle: "You simply send us the catalog cards; we digitize them and deliver the complete database with the management software"
+        subtitle: "Professional library catalog digitization and managing software"
     },
     results: {
         intro: "The program is equally suitable for processing catalog cards of museum-quality rare books and modern book collections.",
