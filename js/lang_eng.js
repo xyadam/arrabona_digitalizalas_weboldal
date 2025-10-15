@@ -1,7 +1,23 @@
 const LANG_EN = {
     hero: {
-        title: "Katalógus Plusz v1.2",
+        title: "Katalógus Plusz",
         subtitle: "Professional library catalog digitization and managing software"
+    },
+    results: {
+        intro: "The program is equally suitable for processing catalog cards of museum-quality rare books and modern book collections.",
+        title: "Results in Numbers",
+        stat1: {
+            value: "3 months",
+            label: "Processing time"
+        },
+        stat2: {
+            value: "5-10 years",
+            label: "Work saved"
+        },
+        stat3: {
+            value: "10x",
+            label: "Faster search"
+        }
     },
     features: {
         title: "Why Choose Katalógus Plusz?",
@@ -92,7 +108,7 @@ const LANG_EN = {
         },
         client: {
             title: "Katalógus Plusz Client",
-            price: "30,000",
+            price: "35,000",
             unit: "HUF",
             desc: "One-time license fee"
         },

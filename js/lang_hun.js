@@ -1,7 +1,23 @@
 const LANG_HU = {
     hero: {
-        title: "Katalógus Plusz v1.2",
+        title: "Katalógus Plusz",
         subtitle: "Professzionális könyvtári katalógus digitalizálás és kezelő szoftver"
+    },
+    results: {
+        intro: "A program egyaránt alkalmas muzeális régi könyv-állomány és modern könyvek katalógus-céduláinak feldolgozására.",
+        title: "Eredmények számokban",
+        stat1: {
+            value: "3 hónap",
+            label: "Feldolgozási idő"
+        },
+        stat2: {
+            value: "5-10 év",
+            label: "Munka megtakarítás"
+        },
+        stat3: {
+            value: "10x",
+            label: "Gyorsabb keresés"
+        }
     },
     features: {
         title: "Miért válassza a Katalógus Plusz-t?",
@@ -92,7 +108,7 @@ const LANG_HU = {
         },
         client: {
             title: "Katalógus Plusz kliens",
-            price: "30 000",
+            price: "35 000",
             unit: "HUF",
             desc: "Egyszeri licencdíj"
         },
