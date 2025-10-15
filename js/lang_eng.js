@@ -1,7 +1,7 @@
 const LANG_EN = {
     hero: {
         title: "Katalógus Plusz v1.2",
-        subtitle: "AI-powered library catalog digitization and management"
+        subtitle: "Library catalog digitization and management service"
     },
     features: {
         title: "Why Choose Katalógus Plusz?",

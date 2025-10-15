@@ -1,7 +1,7 @@
 const LANG_HU = {
     hero: {
         title: "Katalógus Plusz v1.2",
-        subtitle: "AI-alapú könyvtári katalógus digitalizálás és kezelés"
+        subtitle: "Könyvtári katalógus digitalizáló és kezelési szolgáltatás"
     },
     features: {
         title: "Miért válassza a Katalógus Plusz-t?",
