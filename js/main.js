@@ -8,7 +8,7 @@ AOS.init({
 
 // Initialize Swiper
 const swiper = new Swiper('.workflowSwiper', {
-    slidesPerView: 1.2,
+    slidesPerView: 1,
     centeredSlides: true,
     spaceBetween: 30,
     loop: false,
@@ -25,6 +25,8 @@ const swiper = new Swiper('.workflowSwiper', {
         enabled: true,
     },
     autoHeight: false,
+    effect: 'slide',
+    watchSlidesProgress: true,
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -32,12 +34,12 @@ const swiper = new Swiper('.workflowSwiper', {
             centeredSlides: true
         },
         640: {
-            slidesPerView: 1.1,
+            slidesPerView: 1,
             spaceBetween: 20,
             centeredSlides: true
         },
         1024: {
-            slidesPerView: 1.2,
+            slidesPerView: 1,
             spaceBetween: 30,
             centeredSlides: true
         }

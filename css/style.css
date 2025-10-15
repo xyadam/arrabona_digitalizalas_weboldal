@@ -386,11 +386,12 @@ section {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 
 .workflowSwiper {
     padding: 1.5rem 0 3rem;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .workflow-step {
@@ -403,12 +404,24 @@ section {
 }
 
 .swiper-slide {
-    opacity: 0.4;
+    opacity: 0;
     transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .swiper-slide-active {
     opacity: 1;
+    pointer-events: auto;
+}
+
+.swiper-slide-next {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.swiper-slide-prev {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .step-number {
