@@ -27,12 +27,12 @@ const LANG_HU = {
         subtitle: "Három egyszerű lépésben a digitális katalógusig",
         instruction: "Használja a nyilakat vagy húzza az ujjával a lépések közötti váltáshoz",
         step1: {
-            title: "Importálás",
-            desc1: "Importálja könyvtári katalóguscéduláit szkennelt képekből, PDF fájlokból vagy külső adatbázisokból.",
-            desc2: "A rendszer automatikusan felismeri és kinyeri az adatokat.",
-            item1: "Szkennelt katalóguscédulák",
-            item2: "PDF dokumentumok",
-            item3: "Külső adatbázisok"
+            title: "Importálás és Digitalizálás",
+            desc1: "Importáljuk az adatokat külső adatbázisokból vagy fájlokból, vagy digitalizáljuk szkennelt képekből és PDF-ekből.",
+            desc2: "Az AI automatikusan felismeri és kinyeri az adatokat a dokumentumokból.",
+            item1: "Digitalizálás szkennelt képekből",
+            item2: "Digitalizálás PDF dokumentumokból",
+            item3: "Importálás külső adatbázisokból"
         },
         step2: {
             title: "Böngészés és Keresés",
@@ -54,24 +54,41 @@ const LANG_HU = {
     pricing: {
         title: "Árazás",
         subtitle: "Válassza ki az Önnek megfelelő csomagot",
-        package1: {
-            name: "Kezdő csomag",
-            range: "1 - 10 000 cédula",
-            price: "100",
-            unit: "HUF / cédula"
+        digitization: {
+            title: "Digitalizálás (PDF-ből vagy fényképekből)",
+            package1: {
+                name: "Kis csomag",
+                range: "1 - 10 000 cédula",
+                price: "100",
+                unit: "HUF / cédula"
+            },
+            package2: {
+                name: "Közepes csomag",
+                range: "10 000 - 50 000 cédula",
+                price: "90",
+                unit: "HUF / cédula",
+                popular: "Népszerű"
+            },
+            package3: {
+                name: "Nagy csomag",
+                range: "50 000+ cédula",
+                price: "80",
+                unit: "HUF / cédula"
+            }
         },
-        package2: {
-            name: "Közepes csomag",
-            range: "10 000 - 50 000 cédula",
-            price: "90",
-            unit: "HUF / cédula",
-            popular: "Népszerű"
-        },
-        package3: {
-            name: "Nagyvállalati csomag",
-            range: "50 000+ cédula",
-            price: "80",
-            unit: "HUF / cédula"
+        import: {
+            title: "Külső rendszerből importálás",
+            custom: {
+                name: "Egyedi árajánlat",
+                range: "Külső rendszerből",
+                price: "Kérjen árajánlatot"
+            },
+            features: {
+                feature1: "Külső SQL adatimport",
+                feature2: "Excel, PDF import",
+                feature3: "Adatbázis tárolás",
+                feature4: "Export lehetőségek"
+            }
         },
         client: {
             title: "Katalógus Plusz kliens",

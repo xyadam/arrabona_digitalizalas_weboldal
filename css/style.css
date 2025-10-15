@@ -481,10 +481,10 @@ section {
     background-color: var(--light-gray);
 }
 
-.pricing-grid {
+.pricing-grid-full {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
@@ -530,6 +530,24 @@ section {
     color: var(--white);
     padding: 2rem 1.5rem;
     text-align: center;
+}
+
+.pricing-header-custom {
+    background: linear-gradient(135deg, var(--light-blue) 0%, var(--accent-blue) 100%);
+}
+
+.pricing-card-custom {
+    border: 2px solid var(--light-blue);
+}
+
+.pricing-card-custom:hover {
+    border-color: var(--accent-blue);
+}
+
+.price-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white);
 }
 
 .pricing-plan {
@@ -774,8 +792,8 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .pricing-grid {
-        grid-template-columns: 1fr;
+    .pricing-grid-full {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .pricing-card-popular {
@@ -826,7 +844,7 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .pricing-grid {
+    .pricing-grid-full {
         grid-template-columns: 1fr;
     }
 

@@ -27,12 +27,12 @@ const LANG_EN = {
         subtitle: "Three simple steps to your digital catalog",
         instruction: "Use the arrows or swipe to navigate between steps",
         step1: {
-            title: "Import",
-            desc1: "Import your library catalog cards from scanned images, PDF files, or external databases.",
-            desc2: "The system automatically recognizes and extracts data.",
-            item1: "Scanned catalog cards",
-            item2: "PDF documents",
-            item3: "External databases"
+            title: "Import and Digitization",
+            desc1: "Import data from external databases or files, or digitize from scanned images and PDFs.",
+            desc2: "AI automatically recognizes and extracts data from documents.",
+            item1: "Digitization from scanned images",
+            item2: "Digitization from PDF documents",
+            item3: "Import from external databases"
         },
         step2: {
             title: "Browse and Search",
@@ -54,24 +54,41 @@ const LANG_EN = {
     pricing: {
         title: "Pricing",
         subtitle: "Choose the package that fits your needs",
-        package1: {
-            name: "Starter Package",
-            range: "1 - 10,000 cards",
-            price: "100",
-            unit: "HUF / card"
+        digitization: {
+            title: "Digitization (from PDFs or photos)",
+            package1: {
+                name: "Small Package",
+                range: "1 - 10,000 cards",
+                price: "100",
+                unit: "HUF / card"
+            },
+            package2: {
+                name: "Medium Package",
+                range: "10,000 - 50,000 cards",
+                price: "90",
+                unit: "HUF / card",
+                popular: "Popular"
+            },
+            package3: {
+                name: "Large Package",
+                range: "50,000+ cards",
+                price: "80",
+                unit: "HUF / card"
+            }
         },
-        package2: {
-            name: "Medium Package",
-            range: "10,000 - 50,000 cards",
-            price: "90",
-            unit: "HUF / card",
-            popular: "Popular"
-        },
-        package3: {
-            name: "Enterprise Package",
-            range: "50,000+ cards",
-            price: "80",
-            unit: "HUF / card"
+        import: {
+            title: "Import from External Systems",
+            custom: {
+                name: "Custom Quote",
+                range: "From external systems",
+                price: "Request a quote"
+            },
+            features: {
+                feature1: "External SQL data import",
+                feature2: "Excel, PDF import",
+                feature3: "Database storage",
+                feature4: "Export options"
+            }
         },
         client: {
             title: "Katalógus Plusz Client",
