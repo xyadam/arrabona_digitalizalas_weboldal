@@ -1,7 +1,7 @@
 const LANG_EN = {
     hero: {
         title: "Katalógus Plusz",
-        subtitle: "Professional library catalog digitization and managing software"
+        subtitle: "You simply send us the catalog cards; we digitize them and deliver the complete database with the management software"
     },
     results: {
         intro: "The program is equally suitable for processing catalog cards of museum-quality rare books and modern book collections.",
@@ -66,6 +66,10 @@ const LANG_EN = {
             item3: "Compatible with library systems"
         }
     },
+    callout: {
+        title: "What do we need from you? Simply the catalog cards.",
+        subtitle: "What do we deliver? A fully digitized database together with the Katalógus Plusz management software so you can start using it immediately."
+    },
     pricing: {
         title: "Pricing",
         subtitle: "Choose the package that fits your needs",
@@ -122,6 +126,7 @@ const LANG_EN = {
         title: "Contact",
         subtitle: "Get in touch with us for more information",
         company: "Arrabona",
+        note: "We handle the entire digitization workflow so you only need to send us the catalog cards.",
         form: {
             name: "Name",
             email: "Email",

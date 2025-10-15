@@ -1,7 +1,7 @@
 const LANG_HU = {
     hero: {
         title: "Katalógus Plusz",
-        subtitle: "Professzionális könyvtári katalógus digitalizálás és kezelő szoftver"
+        subtitle: "Ön csak elküldi a katalóguscédulákat, mi digitalizáljuk és átadjuk a teljes adatbázist a kezelőszoftverrel"
     },
     results: {
         intro: "A program egyaránt alkalmas muzeális régi könyv-állomány és modern könyvek katalógus-céduláinak feldolgozására.",
@@ -66,6 +66,10 @@ const LANG_HU = {
             item3: "Könyvtári rendszerekkel kompatibilis"
         }
     },
+    callout: {
+        title: "Mit kérünk Öntől? Csupán a cédulák továbbítását.",
+        subtitle: "Mit adunk? Teljesen digitalizált adatbázist a Katalógus Plusz kezelőszoftverrel, hogy azonnal használatba vehesse."
+    },
     pricing: {
         title: "Árazás",
         subtitle: "Válassza ki az Önnek megfelelő csomagot",
@@ -122,6 +126,7 @@ const LANG_HU = {
         title: "Kapcsolat",
         subtitle: "Vegye fel velünk a kapcsolatot további információkért",
         company: "Arrabona",
+        note: "A digitalizálási folyamatot teljes egészében átvállaljuk, Önnek csak a cédulákat kell eljuttatnia hozzánk.",
         form: {
             name: "Név",
             email: "Email",
