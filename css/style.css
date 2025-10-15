@@ -562,31 +562,63 @@ section {
 }
 
 .value-callout {
-    background-color: var(--white);
-    padding: 40px 0;
+    background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
+    padding: 50px 0;
+    position: relative;
 }
 
 .value-callout-card {
-    background: linear-gradient(135deg, rgba(30, 58, 138, 0.12) 0%, rgba(96, 165, 250, 0.12) 100%);
-    border: 1px solid rgba(30, 58, 138, 0.15);
-    border-radius: 16px;
-    padding: 2.5rem;
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    border: 1px solid var(--border-gray);
+    border-radius: 20px;
+    padding: 3rem;
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
-    box-shadow: 0 10px 30px rgba(30, 58, 138, 0.08);
+    box-shadow:
+        0 15px 35px rgba(30, 58, 138, 0.1),
+        0 5px 15px rgba(30, 58, 138, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.value-callout-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-blue), var(--light-blue), var(--primary-blue));
 }
 
 .value-callout-title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--primary-blue);
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.value-callout-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-blue), var(--light-blue));
+    border-radius: 2px;
 }
 
 .value-callout-text {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     color: var(--dark-gray);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Pricing Section */
@@ -770,45 +802,119 @@ section {
 
 /* Contact Section */
 .contact {
-    background-color: var(--white);
+    background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
+    padding-top: 60px;
+    position: relative;
 }
 
 .contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 4rem;
-    margin-top: 3rem;
-    align-items: start;
-}
-
-.contact-info {
-    background-color: var(--light-gray);
-    padding: 2.5rem;
-    border-radius: 12px;
-}
-
-.contact-info-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary-blue);
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
     margin-bottom: 2rem;
+}
+
+.contact-card {
+    max-width: 800px;
+    width: 100%;
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    padding: 3.5rem 3rem;
+    border-radius: 20px;
+    box-shadow:
+        0 20px 50px rgba(15, 27, 66, 0.1),
+        0 10px 25px rgba(30, 58, 138, 0.08);
+    text-align: center;
+    border: 1px solid var(--border-gray);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-blue), var(--light-blue), var(--primary-blue));
+}
+
+.contact-card-header {
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-card-title {
+    margin-bottom: 1rem;
+    color: var(--primary-blue);
+    font-size: 2.2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.contact-card-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-blue), var(--light-blue));
+    border-radius: 2px;
+}
+
+.contact-card-subtitle {
+    color: var(--dark-gray);
+    opacity: 0.9;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 1.5rem auto 0;
 }
 
 .contact-details {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-detail-item {
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding: 1.2rem 1.8rem;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.contact-detail-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(30, 58, 138, 0.12);
 }
 
 .detail-icon {
     color: var(--primary-blue);
     flex-shrink: 0;
+    background-color: rgba(30, 58, 138, 0.1);
+    padding: 10px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-icon svg {
+    width: 24px;
+    height: 24px;
 }
 
 .contact-detail-item a {
@@ -816,18 +922,11 @@ section {
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s ease;
+    font-weight: 600;
 }
 
 .contact-detail-item a:hover {
     color: var(--primary-blue);
-}
-
-.contact-note {
-    margin-top: 2.5rem;
-    font-size: 1.05rem;
-    color: var(--dark-gray);
-    line-height: 1.7;
-    font-weight: 500;
 }
 
 /* Contact Form */
@@ -978,10 +1077,13 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .contact-wrapper {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+    .value-callout-card { padding: 2.5rem; }
+    .value-callout-title { font-size: 1.6rem; }
+
+    .contact-card { padding: 2.5rem 2rem; }
+    .contact-details { gap: 1.5rem; }
+    .contact-card-title { font-size: 2rem; }
+    .contact-detail-item { padding: 1rem 1.5rem; }
 
     .footer-content {
         flex-direction: column;
@@ -1025,6 +1127,15 @@ section {
     section {
         padding: 50px 0;
     }
+
+    .value-callout-card { padding: 2rem 1.5rem; }
+    .value-callout-title { font-size: 1.5rem; }
+    .value-callout-text { font-size: 1rem; }
+    
+    .contact-card { padding: 2rem 1.5rem; border-radius: 12px; }
+    .contact-card-title { font-size: 1.8rem; }
+    .contact-details { flex-direction: column; gap: 1.2rem; }
+    .contact-detail-item { max-width: 80%; padding: 0.9rem 1.2rem; }
 
     .workflow-step {
         padding: 1.5rem 1rem;
