@@ -1269,6 +1269,7 @@ section {
 /* Products Grid - Home Page */
 .products {
     background-color: var(--light-gray);
+    padding: 40px 0 80px;
 }
 
 .products-grid {
