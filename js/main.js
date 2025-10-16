@@ -211,3 +211,64 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Initialize translations and set default language
 loadTranslations();
 updateLanguage(currentLanguage);
+
+// Image Modal (Lightbox) for Product Showcase
+const productShowcase = document.querySelector('.product-showcase');
+if (productShowcase) {
+    const productImage = productShowcase.querySelector('.product-image');
+    if (productImage) {
+        productShowcase.addEventListener('click', () => {
+            openImageModal(productImage.src, productImage.alt);
+        });
+    }
+}
+
+function openImageModal(imageSrc, imageAlt) {
+    let modal = document.querySelector('.image-modal');
+
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.className = 'image-modal';
+        modal.innerHTML = `
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close">&times;</button>
+                <img src="${imageSrc}" alt="${imageAlt}" class="modal-image">
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        const closeBtn = modal.querySelector('.modal-close');
+        closeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            closeImageModal();
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeImageModal();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeImageModal();
+            }
+        });
+    } else {
+        modal.querySelector('.modal-image').src = imageSrc;
+        modal.querySelector('.modal-image').alt = imageAlt;
+    }
+
+    setTimeout(() => {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }, 10);
+}
+
+function closeImageModal() {
+    const modal = document.querySelector('.image-modal');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
