@@ -109,11 +109,22 @@ const LANG_CHAT_HU = {
                 "RAG-alapú keresés",
                 "Forráskövetés"
             ]
+        },
+        package4: {
+            name: "AI beszélgetés költsége",
+            range: "Egyedi AI-szolgáltatói díj",
+            price: "~10",
+            unit: "HUF / kérdés",
+            features: [
+                "Az ügyfél saját AI előfizetését használja",
+                "Átlagos költség: ~10 Ft/kérdés",
+                "Lehetőség a legújabb AI modellek csatlakoztatására az adatokhoz"
+            ]
         }
     },
     callout: {
         title: "Dokumentumok feldolgozása",
-        description: "Küldje el a dokumentumait; feldolgozzuk és kereshetővé tesszük őket. Az online AI beszélgetés használata külön költség az Ön AI‑szolgáltatója alapján."
+        description: "Küldje el a dokumentumait; feldolgozzuk és kereshetővé tesszük őket. Az AI beszélgetéshez a legújabb modelleket csatlakoztatjuk az adatbázisához, a kérdések költsége átlagosan ~10 Ft."
     },
     contact: {
         title: "Kapcsolat",

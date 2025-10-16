@@ -109,11 +109,22 @@ const LANG_CHAT_EN = {
                 "RAG-based search",
                 "Source tracking"
             ]
+        },
+        package4: {
+            name: "AI Conversation Cost",
+            range: "Billed directly by your AI provider",
+            price: "~10",
+            unit: "HUF / question",
+            features: [
+                "Uses your own AI subscription",
+                "Average cost: ~10 HUF/question",
+                "Option to connect the latest AI models to your data"
+            ]
         }
     },
     callout: {
         title: "Document Processing",
-        description: "Send us your documents; we process them and make them searchable. Online AI conversation usage is a separate cost based on your AI provider."
+        description: "Send us your documents; we process them and make them searchable. We can connect the latest AI models to your data for conversations, with questions costing around ~10 HUF each."
     },
     contact: {
         title: "Contact",
