@@ -12,7 +12,7 @@ const LANG_CHAT_HU = {
         title: "Miért válassza a Libra AI-t?",
         upload: {
             title: "Dokumentumok beküldése",
-            desc: "PDF-ek, Word dokumentumok, beszkennelt könyvek – minden formátum támogatott. A szöveges adataiból AI által kereshető adatbázist hozunk létre."
+            desc: "PDF-ek, Word dokumentumok, beszkennelt könyvek – minden gyakori szöveges formátum támogatott. A szöveges adataiból AI által kereshető adatbázist hozunk létre."
         },
         chat: {
             title: "AI beszélgetőfelület",

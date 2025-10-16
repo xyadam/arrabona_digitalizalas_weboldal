@@ -12,7 +12,7 @@ const LANG_CHAT_EN = {
         title: "Why Choose Libra AI?",
         upload: {
             title: "Document Upload",
-            desc: "PDFs, Word documents, scanned books – all formats supported. We create an AI-searchable database from your textual content."
+            desc: "PDFs, Word documents, scanned books – all common text formats supported. We create an AI-searchable database from your textual content."
         },
         chat: {
             title: "AI Conversation Interface",
