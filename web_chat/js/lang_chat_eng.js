@@ -2,7 +2,8 @@ const LANG_CHAT_EN = {
     nav: { home: "Home" },
     hero: {
         title: "Libra AI",
-        subtitle: "Converse with your documents – AI-powered search and analysis"
+        subtitle: "Converse with your books and documents",
+        subtitle2: "AI-powered search and analysis"
     },
     intro: {
         title: "Books, Notes, Documents – Easily Searchable",
@@ -10,21 +11,21 @@ const LANG_CHAT_EN = {
     },
     features: {
         title: "Why Choose Libra AI?",
-        upload: {
-            title: "Document Upload",
-            desc: "PDFs, Word documents, scanned books – all common text formats supported. We create an AI-searchable database from your textual content."
+        search: {
+            title: "Smart Search",
+            desc: "Finds even the smallest mentions and references in your documents. Search across all books, or narrow down to specific works."
         },
         chat: {
             title: "AI Conversation Interface",
             desc: "Ask natural-language questions about your documents and filter to specific books. Multilingual support: converse in Hungarian about Latin, English, German, etc. materials."
         },
-        search: {
-            title: "Smart Search",
-            desc: "RAG-based search: finds brief mentions and indirect references. Search across all documents at once, or narrow the search to selected documents."
-        },
         sources: {
             title: "Source Tracking",
             desc: "AI precisely shows which document and which part the answer came from - complete citations."
+        },
+        dataPrivacy: {
+            title: "On-Premises Data Storage",
+            desc: "The AI-searchable database can be hosted on your local network. Your documents remain secure and private, never uploaded to the cloud."
         }
     },
     workflow: {
@@ -32,21 +33,21 @@ const LANG_CHAT_EN = {
         subtitle: "Three simple steps to your AI-searchable local database",
         step1: {
             title: "Document Submission and Processing",
-            desc: "Digitization work – we process the documents you send us. Scanned book pages, PDFs, Word files with OCR. AI interprets and indexes the content as text.",
+            desc: "We process the documents you send: extract text from scanned pages and PDFs, then make them AI-searchable. The finished database can be stored on your local network – your documents remain secure.",
             features: [
                 "Scanned book page processing",
-                "PDF document support",
-                "Word and other text files",
-                "Automatic OCR and indexing"
+                "PDF and Word documents",
+                "Automatic text recognition",
+                "AI-searchable database"
             ]
         },
         step2: {
             title: "Start AI Conversation",
-            desc: "Conversation with AI about the processed documents. Ask freely and filter to specific books. Online AI provider costs are paid by the client (~10 HUF/question).",
+            desc: "Connect to your local database using your own AI subscription. We provide the search interface, you use your own AI service. Average cost: ~10 HUF/question.",
             features: [
                 "Natural language questions",
                 "Filter to specific books",
-                "Conversation memory",
+                "Conversation history",
                 "AI cost: ~10 HUF/question"
             ]
         },
@@ -63,8 +64,8 @@ const LANG_CHAT_EN = {
     },
     pricingNote: {
         title: "Pricing – AI-Searchable Database Creation",
-        intro: "The prices below are one-time fees for document processing (digitization, OCR, AI indexing).",
-        aiCostNote: "AI conversation usage is billed separately by your AI provider. Average cost is ~10 HUF per question, depending on your subscription.",
+        intro: "The prices below are one-time fees for document processing and making them searchable.",
+        aiCostNote: "For AI conversations, you use your own AI subscription (e.g., your own Google AI). We provide the connection to your local database. Average cost: ~10 HUF/question.",
         documentNote: "We make the documents you send searchable during processing – this is the fee paid here."
     },
     pricing: {
@@ -76,11 +77,11 @@ const LANG_CHAT_EN = {
             price: "80",
             unit: "HUF / page",
             features: [
-                "Document processing and OCR",
-                "AI database creation",
-                "AI conversation interface enabled",
-                "RAG-based search",
-                "Source tracking"
+                "Document processing",
+                "AI-searchable database",
+                "Local network storage",
+                "Smart search",
+                "Precise source tracking"
             ]
         },
         package2: {
@@ -90,11 +91,11 @@ const LANG_CHAT_EN = {
             unit: "HUF / page",
             popular: "Popular",
             features: [
-                "Document processing and OCR",
-                "AI database creation",
-                "AI conversation interface enabled",
-                "RAG-based search",
-                "Source tracking"
+                "Document processing",
+                "AI-searchable database",
+                "Local network storage",
+                "Smart search",
+                "Precise source tracking"
             ]
         },
         package3: {
@@ -103,22 +104,22 @@ const LANG_CHAT_EN = {
             price: "60",
             unit: "HUF / page",
             features: [
-                "Document processing and OCR",
-                "AI database creation",
-                "AI conversation interface enabled",
-                "RAG-based search",
-                "Source tracking"
+                "Document processing",
+                "AI-searchable database",
+                "Local network storage",
+                "Smart search",
+                "Precise source tracking"
             ]
         },
         package4: {
             name: "AI Conversation Cost",
-            range: "Billed directly by your AI provider",
+            range: "Custom AI fee",
             price: "~10",
             unit: "HUF / question",
             features: [
-                "Uses your own AI subscription",
+                "Use your own AI subscription",
                 "Average cost: ~10 HUF/question",
-                "Option to connect the latest AI models to your data"
+                "Latest AI models can be connected"
             ]
         }
     },

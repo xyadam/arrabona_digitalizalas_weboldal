@@ -2,7 +2,8 @@ const LANG_CHAT_HU = {
     nav: { home: "Főoldal" },
     hero: {
         title: "Libra AI",
-        subtitle: "Beszélgetés a dokumentumaiddal – AI-alapú keresés és elemzés"
+        subtitle: "Beszélgetés a könyveiddel, dokumentumaiddal",
+        subtitle2: "AI-alapú keresés és elemzés"
     },
     intro: {
         title: "Könyvek, Jegyzetek, Dokumentumok – Könnyen Kereshető",
@@ -10,21 +11,21 @@ const LANG_CHAT_HU = {
     },
     features: {
         title: "Miért válassza a Libra AI-t?",
-        upload: {
-            title: "Dokumentumok beküldése",
-            desc: "PDF-ek, Word dokumentumok, beszkennelt könyvek – minden gyakori szöveges formátum támogatott. A szöveges adataiból AI által kereshető adatbázist hozunk létre."
+        search: {
+            title: "Intelligens Keresés",
+            desc: "A legkisebb említéseket és utalásokat is megtalálja a dokumentumaiban. Kereshet az összes könyvben, vagy szűkítheti bizonyos művekre."
         },
         chat: {
             title: "AI beszélgetőfelület",
             desc: "Természetes nyelvű kérdésekkel rákérdezhet a dokumentumokra, és szűrheti a keresést konkrét könyvekre. Többnyelvű támogatás: magyar nyelven is kérdezhet latin, angol, német stb. nyelvű anyagokról."
         },
-        search: {
-            title: "Intelligens Keresés",
-            desc: "RAG-alapú keresés: a rövid említéseket és utalásokat is megtalálja. Kereshet egyszerre az összes dokumentumban, vagy leszűkítheti a keresést csak bizonyos dokumentumokra."
-        },
         sources: {
             title: "Forráskövetés",
             desc: "Az AI pontosan jelzi, melyik dokumentum melyik részéből jött a válasz - teljes hivatkozások."
+        },
+        dataPrivacy: {
+            title: "Saját Hálózaton Tárolható",
+            desc: "Az AI-kereshető adatbázis a helyi hálózatán üzemeltethető. Dokumentumai biztonságban maradnak, nem kerülnek felhőbe."
         }
     },
     workflow: {
@@ -32,21 +33,21 @@ const LANG_CHAT_HU = {
         subtitle: "Három egyszerű lépésben az AI által kereshető helyi adatbázisig",
         step1: {
             title: "Dokumentumok beküldése és feldolgozása",
-            desc: "Digitalizálási munka – az Ön által elküldött dokumentumokat feldolgozzuk. Beszkennelt könyvoldalak, PDF-ek, Word fájlok OCR feldolgozása. Az AI szövegként értelmezi és indexeli a tartalmakat.",
+            desc: "Az Ön által elküldött dokumentumokat feldolgozzuk: a beszkennelt oldalakból és PDF-ekből szöveget nyerünk ki, majd AI által kereshetővé tesszük. Az elkészült adatbázis a helyi hálózatán tárolható – dokumentumai biztonságban maradnak.",
             features: [
-                "Bescannelt könyv oldalak feldolgozása",
-                "PDF dokumentumok támogatása",
-                "Word és egyéb szövegfájlok",
-                "Automatikus OCR és indexálás"
+                "Beszkennelt könyvoldalak feldolgozása",
+                "PDF és Word dokumentumok",
+                "Automatikus szövegfelismerés",
+                "AI által kereshető adatbázis"
             ]
         },
         step2: {
             title: "AI beszélgetés indítása",
-            desc: "Beszélgetés az AI-val a feldolgozott dokumentumokról. Szabadon kérdezhet, a keresést szűrheti egy vagy több könyvre. Az online AI-szolgáltató költsége az ügyfelet terheli (~10 Ft/kérdés).",
+            desc: "A saját AI előfizetésével csatlakozhat a helyi adatbázisához. Mi biztosítjuk a keresőfelületet, Ön használja a saját AI szolgáltatását. Átlagos költség: ~10 Ft/kérdés.",
             features: [
                 "Természetes nyelvű kérdések",
                 "Szűrés specifikus könyvekre",
-                "Conversation memory",
+                "Beszélgetési előzmények",
                 "AI költsége: ~10 Ft/kérdés"
             ]
         },
@@ -63,8 +64,8 @@ const LANG_CHAT_HU = {
     },
     pricingNote: {
         title: "Árazás – AI kereshető adatbázis készítése",
-        intro: "Az alábbi árak a dokumentumok feldolgozásáért (digitalizálás, OCR, AI indexálás) fizetendő egyszeri díjak.",
-        aiCostNote: "Az AI beszélgetés használatáért külön, az AI‑szolgáltatónak kell fizetni. Egy átlagos kérdés költsége ~10 Ft az előfizetésétől függően.",
+        intro: "Az alábbi árak a dokumentumok feldolgozásáért és kereshetővé tételéért fizetendő egyszeri díjak.",
+        aiCostNote: "Az AI beszélgetéshez a saját AI előfizetését használja (pl. saját Google AI). Mi biztosítjuk a csatlakozást a helyi adatbázisához. Átlagos költség: ~10 Ft/kérdés.",
         documentNote: "Az Ön elküldött dokumentumait a feldolgozás során kereshetővé tesszük – ezt a díjat itt fizeti meg."
     },
     pricing: {
@@ -76,11 +77,11 @@ const LANG_CHAT_HU = {
             price: "80",
             unit: "HUF / oldal",
             features: [
-                "Dokumentum feldolgozása és OCR",
-                "AI adatbázis létrehozása",
-                "AI beszélgetőfelület engedélyezése",
-                "RAG-alapú keresés",
-                "Forráskövetés"
+                "Dokumentumok feldolgozása",
+                "AI által kereshető adatbázis",
+                "Helyi hálózaton tárolható",
+                "Intelligens keresés",
+                "Pontos forráskövetés"
             ]
         },
         package2: {
@@ -90,11 +91,11 @@ const LANG_CHAT_HU = {
             unit: "HUF / oldal",
             popular: "Népszerű",
             features: [
-                "Dokumentum feldolgozása és OCR",
-                "AI adatbázis létrehozása",
-                "AI beszélgetőfelület engedélyezése",
-                "RAG-alapú keresés",
-                "Forráskövetés"
+                "Dokumentumok feldolgozása",
+                "AI által kereshető adatbázis",
+                "Helyi hálózaton tárolható",
+                "Intelligens keresés",
+                "Pontos forráskövetés"
             ]
         },
         package3: {
@@ -103,22 +104,22 @@ const LANG_CHAT_HU = {
             price: "60",
             unit: "HUF / oldal",
             features: [
-                "Dokumentum feldolgozása és OCR",
-                "AI adatbázis létrehozása",
-                "AI beszélgetőfelület engedélyezése",
-                "RAG-alapú keresés",
-                "Forráskövetés"
+                "Dokumentumok feldolgozása",
+                "AI által kereshető adatbázis",
+                "Helyi hálózaton tárolható",
+                "Intelligens keresés",
+                "Pontos forráskövetés"
             ]
         },
         package4: {
             name: "AI beszélgetés költsége",
-            range: "Egyedi AI-szolgáltatói díj",
+            range: "Egyedi AI díj",
             price: "~10",
             unit: "HUF / kérdés",
             features: [
-                "Az ügyfél saját AI előfizetését használja",
+                "Saját AI előfizetés használata",
                 "Átlagos költség: ~10 Ft/kérdés",
-                "Lehetőség a legújabb AI modellek csatlakoztatására az adatokhoz"
+                "A legújabb AI modellek csatlakoztathatók"
             ]
         }
     },
