@@ -1,25 +1,25 @@
 const LANG_CHAT_HU = {
     hero: {
         title: "Libra AI",
-        subtitle: "Beszélgetés a dokumentumaidhoz - AI-alapú keresés és elemzés"
+        subtitle: "Beszélgetés a dokumentumaiddal – AI-alapú keresés és elemzés"
     },
     intro: {
-        title: "Könyvek, Jegyzetek, Dokumentumok - Könnyen Kereshető",
-        description: "Feltöltse a bescannelt könyveket, PDF dokumentumokat és jegyzeteket. Mi feldolgozzuk, és egy AI chat interfacen keresztül kérdezhet rájuk. Többnyelvű támogatás: beszélgetés magyar nyelven latin, angol, német dokumentumokkal. Természetes nyelvű kérdések, fordítás, pontos forráskövetés."
+        title: "Könyvek, Jegyzetek, Dokumentumok – Könnyen Kereshető",
+        description: "Küldje el számunkra a beszkennelt könyveket, PDF-eket és jegyzeteket. Mi feldolgozzuk, és AI beszélgetőfelületen keresztül kérdezhet róluk. Többnyelvű támogatás: magyar nyelven is beszélgethet latin, angol, német stb. nyelvű dokumentumok tartalmáról. Természetes nyelvű kérdések, fordítás, pontos forráskövetés."
     },
     features: {
         title: "Miért válassza a Libra AI-t?",
         upload: {
-            title: "Dokumentumok feltöltése",
-            desc: "PDF-ek, Word dokumentumok, bescannelt könyvek - minden formátum támogatott. OCR feldolgozás és AI indexálás."
+            title: "Dokumentumok beküldése",
+            desc: "PDF-ek, Word dokumentumok, beszkennelt könyvek – minden formátum támogatott. A szöveges adataiból AI által kereshető adatbázist hozunk létre."
         },
         chat: {
-            title: "AI Chat Interface",
-            desc: "Természetes nyelvű kérdésekben tud rákérdezni a dokumentumokra, szűrheti a keresést specifikus könyvekre. Többnyelvű támogatás: beszélgetés magyar nyelven latin, angol, német dokumentumokkal."
+            title: "AI beszélgetőfelület",
+            desc: "Természetes nyelvű kérdésekkel rákérdezhet a dokumentumokra, és szűrheti a keresést konkrét könyvekre. Többnyelvű támogatás: magyar nyelven is kérdezhet latin, angol, német stb. nyelvű anyagokról."
         },
         search: {
             title: "Intelligens Keresés",
-            desc: "RAG-alapú keresés: még a legkisebb említés is megtalálható az Ön dokumentumaiban."
+            desc: "RAG-alapú keresés: a rövid említéseket és utalásokat is megtalálja. Kereshet egyszerre az összes dokumentumban, vagy leszűkítheti a keresést csak bizonyos dokumentumokra."
         },
         sources: {
             title: "Forráskövetés",
@@ -30,8 +30,8 @@ const LANG_CHAT_HU = {
         title: "Hogyan működik?",
         subtitle: "Három egyszerű lépésben az AI adatbázisig",
         step1: {
-            title: "Dokumentumok feltöltése és feldolgozása",
-            desc: "Digitalizálási munka - feldolgozzuk az Ön dokumentumait. Bescannelt könyv oldalak, PDF-ek, Word fájlok OCR feldolgozása. Az AI szövegként értelmezi és indexeli a tartalmakat.",
+            title: "Dokumentumok beküldése és feldolgozása",
+            desc: "Digitalizálási munka – az Ön által elküldött dokumentumokat feldolgozzuk. Beszkennelt könyvoldalak, PDF-ek, Word fájlok OCR feldolgozása. Az AI szövegként értelmezi és indexeli a tartalmakat.",
             features: [
                 "Bescannelt könyv oldalak feldolgozása",
                 "PDF dokumentumok támogatása",
@@ -40,8 +40,8 @@ const LANG_CHAT_HU = {
             ]
         },
         step2: {
-            title: "Chat indítása és kérdezés",
-            desc: "Beszélgetés az AI-val a feldolgozott dokumentumokról. Szabadon kérdezhet, szűrheti egy vagy több könyvre a keresést. Az online AI provider költsége az ügyfelet terheli (~10 Ft/kérdés).",
+            title: "AI beszélgetés indítása",
+            desc: "Beszélgetés az AI-val a feldolgozott dokumentumokról. Szabadon kérdezhet, a keresést szűrheti egy vagy több könyvre. Az online AI-szolgáltató költsége az ügyfelet terheli (~10 Ft/kérdés).",
             features: [
                 "Természetes nyelvű kérdések",
                 "Szűrés specifikus könyvekre",
@@ -61,10 +61,10 @@ const LANG_CHAT_HU = {
         }
     },
     pricingNote: {
-        title: "Árazás - Digitalizálási költség",
-        intro: "Az alábbi árak a dokumentumok feldolgozásáért (digitalizálás, OCR, AI indexálás) szóló egyszeri díjak.",
-        aiCostNote: "Az AI chat használatáért külön fizetni kell az AI szolgáltatónak. Egy átlagos kérdés költsége ~10 Ft az ügyfél AI subscription-ja alapján.",
-        documentNote: "Az Ön dokumentumait kereshetővé tesszük a feldolgozás során - ezt a díjat itt fizeti meg."
+        title: "Árazás – Digitalizálási költség",
+        intro: "Az alábbi árak a dokumentumok feldolgozásáért (digitalizálás, OCR, AI indexálás) fizetendő egyszeri díjak.",
+        aiCostNote: "Az AI beszélgetés használatáért külön, az AI‑szolgáltatónak kell fizetni. Egy átlagos kérdés költsége ~10 Ft az előfizetésétől függően.",
+        documentNote: "Az Ön elküldött dokumentumait a feldolgozás során kereshetővé tesszük – ezt a díjat itt fizeti meg."
     },
     pricing: {
         title: "Árazás",
@@ -77,7 +77,7 @@ const LANG_CHAT_HU = {
             features: [
                 "Dokumentum feldolgozása és OCR",
                 "AI adatbázis létrehozása",
-                "Chat interface engedélyezése",
+                "AI beszélgetőfelület engedélyezése",
                 "RAG-alapú keresés",
                 "Forráskövetés"
             ]
@@ -91,7 +91,7 @@ const LANG_CHAT_HU = {
             features: [
                 "Dokumentum feldolgozása és OCR",
                 "AI adatbázis létrehozása",
-                "Chat interface engedélyezése",
+                "AI beszélgetőfelület engedélyezése",
                 "RAG-alapú keresés",
                 "Forráskövetés"
             ]
@@ -104,7 +104,7 @@ const LANG_CHAT_HU = {
             features: [
                 "Dokumentum feldolgozása és OCR",
                 "AI adatbázis létrehozása",
-                "Chat interface engedélyezése",
+                "AI beszélgetőfelület engedélyezése",
                 "RAG-alapú keresés",
                 "Forráskövetés"
             ]
@@ -112,13 +112,13 @@ const LANG_CHAT_HU = {
     },
     callout: {
         title: "Dokumentumok feldolgozása",
-        description: "Sendlje el a dokumentumait, mi feldolgozzuk és kereshetővé tesszük őket. Az online AI chat használata külön költség az Ön AI provider-e alapján."
+        description: "Küldje el a dokumentumait; feldolgozzuk és kereshetővé tesszük őket. Az online AI beszélgetés használata külön költség az Ön AI‑szolgáltatója alapján."
     },
     contact: {
         title: "Kapcsolat",
         subtitle: "Vegye fel velünk a kapcsolatot további információkért",
         company: "Arrabona",
-        note: "Digitalizálási munka - mi feldolgozzuk az Ön dokumentumait. Az AI chat használata külön díj.",
+        note: "Digitalizálási munka – feldolgozzuk az Ön dokumentumait. Az AI beszélgetés használata külön díj.",
         form: {
             name: "Név",
             email: "Email",

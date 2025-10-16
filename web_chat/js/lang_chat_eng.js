@@ -1,25 +1,25 @@
 const LANG_CHAT_EN = {
     hero: {
         title: "Libra AI",
-        subtitle: "Chat with your documents - AI-powered search and analysis"
+        subtitle: "Converse with your documents – AI-powered search and analysis"
     },
     intro: {
-        title: "Books, Notes, Documents - Easily Searchable",
-        description: "Upload scanned books, PDF documents, and notes. We process them and enable AI chat to query the content. Multilingual support: chat in Hungarian with Latin, English, German documents. Natural language questions, translation, precise source tracking."
+        title: "Books, Notes, Documents – Easily Searchable",
+        description: "Send us your scanned books, PDFs, and notes. We process them and enable an AI conversation interface to query their content. Multilingual support: converse in Hungarian about Latin, English, German, etc. documents. Natural-language questions, translation, precise source attribution."
     },
     features: {
         title: "Why Choose Libra AI?",
         upload: {
             title: "Document Upload",
-            desc: "PDFs, Word documents, scanned books - all formats supported. OCR processing and AI indexing."
+            desc: "PDFs, Word documents, scanned books – all formats supported. We create an AI-searchable database from your textual content."
         },
         chat: {
-            title: "AI Chat Interface",
-            desc: "Ask natural language questions about your documents, filter search to specific books. Multilingual support: chat in Hungarian with Latin, English, German documents."
+            title: "AI Conversation Interface",
+            desc: "Ask natural-language questions about your documents and filter to specific books. Multilingual support: converse in Hungarian about Latin, English, German, etc. materials."
         },
         search: {
             title: "Smart Search",
-            desc: "RAG-based search: even the smallest mention in your documents is findable."
+            desc: "RAG-based search: finds brief mentions and indirect references. Search across all documents at once, or narrow the search to selected documents."
         },
         sources: {
             title: "Source Tracking",
@@ -30,8 +30,8 @@ const LANG_CHAT_EN = {
         title: "How does it work?",
         subtitle: "Three simple steps to your AI database",
         step1: {
-            title: "Document Upload and Processing",
-            desc: "Digitization work - we process your documents. Scanned book pages, PDFs, Word files with OCR processing. AI interprets and indexes the content as text.",
+            title: "Document Submission and Processing",
+            desc: "Digitization work – we process the documents you send us. Scanned book pages, PDFs, Word files with OCR. AI interprets and indexes the content as text.",
             features: [
                 "Scanned book page processing",
                 "PDF document support",
@@ -40,8 +40,8 @@ const LANG_CHAT_EN = {
             ]
         },
         step2: {
-            title: "Chat Launch and Questioning",
-            desc: "Conversation with AI about processed documents. Ask freely, filter search to specific books. Online AI provider costs paid by client (~10 HUF/question).",
+            title: "Start AI Conversation",
+            desc: "Conversation with AI about the processed documents. Ask freely and filter to specific books. Online AI provider costs are paid by the client (~10 HUF/question).",
             features: [
                 "Natural language questions",
                 "Filter to specific books",
@@ -61,10 +61,10 @@ const LANG_CHAT_EN = {
         }
     },
     pricingNote: {
-        title: "Pricing - Digitization Cost",
+        title: "Pricing – Digitization Cost",
         intro: "The prices below are one-time fees for document processing (digitization, OCR, AI indexing).",
-        aiCostNote: "You pay separately to the AI provider for chat usage. Average question cost is ~10 HUF based on your AI subscription.",
-        documentNote: "We make your documents searchable during processing - this is the fee you pay here."
+        aiCostNote: "AI conversation usage is billed separately by your AI provider. Average cost is ~10 HUF per question, depending on your subscription.",
+        documentNote: "We make the documents you send searchable during processing – this is the fee paid here."
     },
     pricing: {
         title: "Pricing",
@@ -77,7 +77,7 @@ const LANG_CHAT_EN = {
             features: [
                 "Document processing and OCR",
                 "AI database creation",
-                "Chat interface enabled",
+                "AI conversation interface enabled",
                 "RAG-based search",
                 "Source tracking"
             ]
@@ -91,7 +91,7 @@ const LANG_CHAT_EN = {
             features: [
                 "Document processing and OCR",
                 "AI database creation",
-                "Chat interface enabled",
+                "AI conversation interface enabled",
                 "RAG-based search",
                 "Source tracking"
             ]
@@ -104,7 +104,7 @@ const LANG_CHAT_EN = {
             features: [
                 "Document processing and OCR",
                 "AI database creation",
-                "Chat interface enabled",
+                "AI conversation interface enabled",
                 "RAG-based search",
                 "Source tracking"
             ]
@@ -112,13 +112,13 @@ const LANG_CHAT_EN = {
     },
     callout: {
         title: "Document Processing",
-        description: "Send us your documents, we process and make them searchable. Online AI chat usage is a separate cost based on your AI provider."
+        description: "Send us your documents; we process them and make them searchable. Online AI conversation usage is a separate cost based on your AI provider."
     },
     contact: {
         title: "Contact",
         subtitle: "Get in touch with us for more information",
         company: "Arrabona",
-        note: "Digitization work - we process your documents. AI chat usage is a separate fee.",
+        note: "Digitization work – we process your documents. AI conversation usage is a separate fee.",
         form: {
             name: "Name",
             email: "Email",
