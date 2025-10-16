@@ -29,7 +29,7 @@ const LANG_CHAT_HU = {
     },
     workflow: {
         title: "Hogyan működik?",
-        subtitle: "Három egyszerű lépésben az AI adatbázisig",
+        subtitle: "Három egyszerű lépésben az AI által kereshető helyi adatbázisig",
         step1: {
             title: "Dokumentumok beküldése és feldolgozása",
             desc: "Digitalizálási munka – az Ön által elküldött dokumentumokat feldolgozzuk. Beszkennelt könyvoldalak, PDF-ek, Word fájlok OCR feldolgozása. Az AI szövegként értelmezi és indexeli a tartalmakat.",
@@ -62,7 +62,7 @@ const LANG_CHAT_HU = {
         }
     },
     pricingNote: {
-        title: "Árazás – Digitalizálási költség",
+        title: "Árazás – AI kereshető adatbázis készítése",
         intro: "Az alábbi árak a dokumentumok feldolgozásáért (digitalizálás, OCR, AI indexálás) fizetendő egyszeri díjak.",
         aiCostNote: "Az AI beszélgetés használatáért külön, az AI‑szolgáltatónak kell fizetni. Egy átlagos kérdés költsége ~10 Ft az előfizetésétől függően.",
         documentNote: "Az Ön elküldött dokumentumait a feldolgozás során kereshetővé tesszük – ezt a díjat itt fizeti meg."

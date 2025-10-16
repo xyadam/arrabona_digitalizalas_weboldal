@@ -29,7 +29,7 @@ const LANG_CHAT_EN = {
     },
     workflow: {
         title: "How does it work?",
-        subtitle: "Three simple steps to your AI database",
+        subtitle: "Three simple steps to your AI-searchable local database",
         step1: {
             title: "Document Submission and Processing",
             desc: "Digitization work – we process the documents you send us. Scanned book pages, PDFs, Word files with OCR. AI interprets and indexes the content as text.",
@@ -62,7 +62,7 @@ const LANG_CHAT_EN = {
         }
     },
     pricingNote: {
-        title: "Pricing – Digitization Cost",
+        title: "Pricing – AI-Searchable Database Creation",
         intro: "The prices below are one-time fees for document processing (digitization, OCR, AI indexing).",
         aiCostNote: "AI conversation usage is billed separately by your AI provider. Average cost is ~10 HUF per question, depending on your subscription.",
         documentNote: "We make the documents you send searchable during processing – this is the fee paid here."
