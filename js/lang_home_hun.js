@@ -2,7 +2,7 @@ const LANG_HOME_HU = {
     hero: {
         title: "Arrabona Szolgáltatások",
         subtitle: "Válassza ki az Önnek megfelelő megoldást a könyvtári digitalizáláshoz",
-        description: "Professzionális OCR digitalizálás és AI-alapú keresési megoldások"
+        description: "Professzionális szövegfelismerő digitalizálás és AI-alapú keresési megoldások"
     },
     products: {
         title: "Termékek",
@@ -18,6 +18,6 @@ const LANG_HOME_HU = {
         }
     },
     footer: {
-        copyright: "© 2025 Arrabona. Minden jog fenntartva."
+        copyright: "c 2025 Arrabona. Minden jog fenntartva."
     }
 };

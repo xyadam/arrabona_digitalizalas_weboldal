@@ -2,7 +2,7 @@ const LANG_HOME_EN = {
     hero: {
         title: "Arrabona Services",
         subtitle: "Choose the solution that fits your library digitization needs",
-        description: "Professional OCR digitization and AI-powered search solutions"
+        description: "Professional text recognition digitization and AI-powered search solutions"
     },
     products: {
         title: "Products",
@@ -18,6 +18,6 @@ const LANG_HOME_EN = {
         }
     },
     footer: {
-        copyright: "© 2025 Arrabona. All rights reserved."
+        copyright: "c 2025 Arrabona. All rights reserved."
     }
 };
