@@ -1,4 +1,5 @@
 const LANG_OCR_EN = {
+    nav: { home: "Home" },
     hero: {
         title: "Katalógus Plusz",
         subtitle: "Professional library catalog digitization and managing software"

@@ -1,4 +1,5 @@
 const LANG_OCR_HU = {
+    nav: { home: "Főoldal" },
     hero: {
         title: "Katalógus Plusz",
         subtitle: "Professzionális könyvtári katalógus digitalizálás és kezelő szoftver"

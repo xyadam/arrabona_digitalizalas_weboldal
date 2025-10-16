@@ -1,4 +1,5 @@
 const LANG_CHAT_EN = {
+    nav: { home: "Home" },
     hero: {
         title: "Libra AI",
         subtitle: "Converse with your documents – AI-powered search and analysis"

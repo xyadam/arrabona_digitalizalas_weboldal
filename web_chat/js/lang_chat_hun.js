@@ -1,4 +1,5 @@
 const LANG_CHAT_HU = {
+    nav: { home: "Főoldal" },
     hero: {
         title: "Libra AI",
         subtitle: "Beszélgetés a dokumentumaiddal – AI-alapú keresés és elemzés"
