@@ -18,6 +18,6 @@ const LANG_HOME_HU = {
         }
     },
     footer: {
-        copyright: "c 2025 Arrabona. Minden jog fenntartva."
+        copyright: "Minden jog fenntartva."
     }
 };

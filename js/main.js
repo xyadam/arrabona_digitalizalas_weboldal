@@ -6,45 +6,48 @@ AOS.init({
     offset: 100
 });
 
-// Initialize Swiper
-const swiper = new Swiper('.workflowSwiper', {
-    slidesPerView: 1,
-    centeredSlides: true,
-    spaceBetween: 30,
-    loop: false,
-    initialSlide: 0,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    keyboard: {
-        enabled: true,
-    },
-    autoHeight: false,
-    effect: 'slide',
-    watchSlidesProgress: true,
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-            centeredSlides: true
+// Initialize Swiper (only if Swiper library and element exist)
+const swiperElement = document.querySelector('.workflowSwiper');
+if (swiperElement && typeof Swiper !== 'undefined') {
+    const swiper = new Swiper('.workflowSwiper', {
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: false,
+        initialSlide: 0,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-        640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            centeredSlides: true
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
         },
-        1024: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            centeredSlides: true
+        keyboard: {
+            enabled: true,
+        },
+        autoHeight: false,
+        effect: 'slide',
+        watchSlidesProgress: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+                centeredSlides: true
+            },
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                centeredSlides: true
+            },
+            1024: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                centeredSlides: true
+            }
         }
-    }
-});
+    });
+}
 
 // Determine which language files to load based on current path
 function getPathPrefix() {

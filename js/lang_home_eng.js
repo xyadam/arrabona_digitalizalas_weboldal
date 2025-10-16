@@ -13,11 +13,11 @@ const LANG_HOME_EN = {
         },
         chat: {
             title: "Libra AI",
-            description: "AI-powered document search with multilingual support. Chat in Hungarian with Latin, English, German documents. Translation, search and source tracking.",
+            description: "Chat with your documents in any language. AI-powered multilingual document search and conversation. Automatic translation, intelligent search, and precise source tracking.",
             button: "View"
         }
     },
     footer: {
-        copyright: "c 2025 Arrabona. All rights reserved."
+        copyright: "All rights reserved."
     }
 };
