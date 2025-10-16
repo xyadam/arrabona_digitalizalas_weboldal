@@ -5,7 +5,7 @@ const LANG_CHAT_HU = {
     },
     intro: {
         title: "Könyvek, Jegyzetek, Dokumentumok - Könnyen Kereshető",
-        description: "Feltöltse a bescannelt könyveket, PDF dokumentumokat és jegyzeteket. Mi feldolgozzuk, és egy AI chat interfacen keresztül kérdezhet rájuk. Természetes nyelvű kérdésekkel, pontos forráskövetéssel."
+        description: "Feltöltse a bescannelt könyveket, PDF dokumentumokat és jegyzeteket. Mi feldolgozzuk, és egy AI chat interfacen keresztül kérdezhet rájuk. Többnyelvű támogatás: beszélgetés magyar nyelven latin, angol, német dokumentumokkal. Természetes nyelvű kérdések, fordítás, pontos forráskövetés."
     },
     features: {
         title: "Miért válassza a Libra AI-t?",
@@ -15,7 +15,7 @@ const LANG_CHAT_HU = {
         },
         chat: {
             title: "AI Chat Interface",
-            desc: "Természetes nyelvű kérdésekben tud rákérdezni a dokumentumokra, szűrheti a keresést specifikus könyvekre."
+            desc: "Természetes nyelvű kérdésekben tud rákérdezni a dokumentumokra, szűrheti a keresést specifikus könyvekre. Többnyelvű támogatás: beszélgetés magyar nyelven latin, angol, német dokumentumokkal."
         },
         search: {
             title: "Intelligens Keresés",
@@ -63,7 +63,7 @@ const LANG_CHAT_HU = {
     pricingNote: {
         title: "Árazás - Digitalizálási költség",
         intro: "Az alábbi árak a dokumentumok feldolgozásáért (digitalizálás, OCR, AI indexálás) szóló egyszeri díjak.",
-        aiCostNote: "Az AI chat használatáért külön fizetni kell az AI provider-nek (tipikusan Gemini, GPT-4, stb.). Egy átlagos kérdés költsége ~10 Ft az ügyfél AI subscription-ja alapján.",
+        aiCostNote: "Az AI chat használatáért külön fizetni kell az AI szolgáltatónak. Egy átlagos kérdés költsége ~10 Ft az ügyfél AI subscription-ja alapján.",
         documentNote: "Az Ön dokumentumait kereshetővé tesszük a feldolgozás során - ezt a díjat itt fizeti meg."
     },
     pricing: {

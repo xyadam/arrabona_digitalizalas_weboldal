@@ -13,7 +13,7 @@ const LANG_HOME_EN = {
         },
         chat: {
             title: "Libra AI",
-            description: "Chat with your documents. We process your documents and enable AI chat to query them. Precise search and source tracking.",
+            description: "AI-powered document search with multilingual support. Chat in Hungarian with Latin, English, German documents. Translation, search and source tracking.",
             button: "View"
         }
     },

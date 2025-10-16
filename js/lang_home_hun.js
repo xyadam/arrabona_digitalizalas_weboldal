@@ -13,7 +13,7 @@ const LANG_HOME_HU = {
         },
         chat: {
             title: "Libra AI",
-            description: "Beszélgetés az Ön dokumentumaival. Feldolgozzuk a dokumentumokat és AI chat interfacen keresztül kérdezhet rájuk. Precíz keresés és forráskövetés.",
+            description: "AI alapú dokumentumkeresés és többnyelvű támogatás. Beszélgetés magyar nyelven latin, angol, német dokumentumokkal. Fordítás, keresés és forráskövetés.",
             button: "Megtekintés"
         }
     },

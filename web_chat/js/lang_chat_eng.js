@@ -5,7 +5,7 @@ const LANG_CHAT_EN = {
     },
     intro: {
         title: "Books, Notes, Documents - Easily Searchable",
-        description: "Upload scanned books, PDF documents, and notes. We process them and enable AI chat to query the content. Ask questions in natural language with precise source tracking."
+        description: "Upload scanned books, PDF documents, and notes. We process them and enable AI chat to query the content. Multilingual support: chat in Hungarian with Latin, English, German documents. Natural language questions, translation, precise source tracking."
     },
     features: {
         title: "Why Choose Libra AI?",
@@ -15,7 +15,7 @@ const LANG_CHAT_EN = {
         },
         chat: {
             title: "AI Chat Interface",
-            desc: "Ask natural language questions about your documents, filter search to specific books."
+            desc: "Ask natural language questions about your documents, filter search to specific books. Multilingual support: chat in Hungarian with Latin, English, German documents."
         },
         search: {
             title: "Smart Search",
@@ -63,7 +63,7 @@ const LANG_CHAT_EN = {
     pricingNote: {
         title: "Pricing - Digitization Cost",
         intro: "The prices below are one-time fees for document processing (digitization, OCR, AI indexing).",
-        aiCostNote: "You pay separately to the AI provider for chat usage (typically Gemini, GPT-4, etc.). Average question cost is ~10 HUF based on your AI subscription.",
+        aiCostNote: "You pay separately to the AI provider for chat usage. Average question cost is ~10 HUF based on your AI subscription.",
         documentNote: "We make your documents searchable during processing - this is the fee you pay here."
     },
     pricing: {
