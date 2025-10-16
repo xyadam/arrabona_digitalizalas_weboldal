@@ -46,12 +46,55 @@ const swiper = new Swiper('.workflowSwiper', {
     }
 });
 
+// Determine which language files to load based on current path
+function getPathPrefix() {
+    const path = window.location.pathname;
+    if (path.includes('/web_ocr/')) return '../';
+    if (path.includes('/web_chat/')) return '../';
+    return '';
+}
+
+// Load language files dynamically
+function loadLanguageFile(lang) {
+    const path = window.location.pathname;
+    const prefix = getPathPrefix();
+    let src = '';
+
+    if (path.includes('/web_ocr/')) {
+        src = `${prefix}js/lang_ocr_${lang}.js`;
+    } else if (path.includes('/web_chat/')) {
+        src = `${prefix}js/lang_chat_${lang}.js`;
+    } else {
+        src = `${prefix}js/lang_home_${lang}.js`;
+    }
+
+    return src;
+}
+
 // Language Management
 let currentLanguage = 'hu';
-const translations = {
-    hu: LANG_HU,
-    en: LANG_EN
-};
+let translations = {};
+
+// Function to load translations
+function loadTranslations() {
+    const path = window.location.pathname;
+    if (path.includes('/web_ocr/')) {
+        translations = {
+            hu: LANG_OCR_HU,
+            en: LANG_OCR_EN
+        };
+    } else if (path.includes('/web_chat/')) {
+        translations = {
+            hu: LANG_CHAT_HU,
+            en: LANG_CHAT_EN
+        };
+    } else {
+        translations = {
+            hu: LANG_HOME_HU,
+            en: LANG_HOME_EN
+        };
+    }
+}
 
 // Language Dropdown Toggle
 const langBtn = document.getElementById('langBtn');
@@ -111,33 +154,42 @@ function getNestedTranslation(obj, path) {
 
 // Contact Form Handling
 const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
 
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        message: document.getElementById('message').value
-    };
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            message: document.getElementById('message').value
+        };
 
-    const subject = currentLanguage === 'hu'
-        ? 'Katalógus Plusz - Érdeklődés'
-        : 'Katalógus Plusz - Inquiry';
+        const subjectKey = currentLanguage === 'hu' ? 'Inquiry' : 'Inquiry';
+        const productName = window.location.pathname.includes('/web_ocr/')
+            ? 'Katalógus Plusz'
+            : window.location.pathname.includes('/web_chat/')
+            ? 'Libra AI'
+            : 'Arrabona Services';
 
-    const body = `
+        const subject = currentLanguage === 'hu'
+            ? `${productName} - Érdeklődés`
+            : `${productName} - Inquiry`;
+
+        const body = `
 ${currentLanguage === 'hu' ? 'Név' : 'Name'}: ${formData.name}
 ${currentLanguage === 'hu' ? 'Email' : 'Email'}: ${formData.email}
 ${currentLanguage === 'hu' ? 'Telefon' : 'Phone'}: ${formData.phone || 'N/A'}
 
 ${currentLanguage === 'hu' ? 'Üzenet' : 'Message'}:
 ${formData.message}
-    `.trim();
+        `.trim();
 
-    window.location.href = `mailto:info@arrabona.hu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = `mailto:info@arrabona.hu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    contactForm.reset();
-});
+        contactForm.reset();
+    });
+}
 
 // Smooth scroll for anchor links (if any added later)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -153,5 +205,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Initialize with default language
+// Initialize translations and set default language
+loadTranslations();
 updateLanguage(currentLanguage);

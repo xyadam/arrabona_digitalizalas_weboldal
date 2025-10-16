@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalógus Plusz - Arrabona</title>
+    <meta name="description" content="AI-alapú könyvtári katalógus digitalizálás és kezelés">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/" class="logo-link">
+                        <img src="img/logo.png" alt="Arrabona Logo" class="logo-img">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <div class="language-dropdown">
+                        <button class="lang-btn" id="langBtn">
+                            <span id="currentLang">HU</span>
+                            <svg class="lang-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="lang-menu" id="langMenu">
+                            <button class="lang-option" data-lang="hu">Magyar</button>
+                            <button class="lang-option" data-lang="en">English</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content" data-aos="fade-right">
+                    <h1 class="hero-title" data-i18n="hero.title">Katalógus Plusz v1.2</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">AI-alapú könyvtári katalógus digitalizálás és kezelés</p>
+                    <div class="hero-contact">
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <a href="mailto:info@arrabona.hu" class="contact-link">info@arrabona.hu</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <a href="tel:+36301234567" class="contact-link">+36 30 123 4567</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                    <div class="product-showcase">
+                        <img src="img/product_main.png" alt="Katalógus Plusz Interface" class="product-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="features.title">Miért válassza a Katalógus Plusz-t?</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title" data-i18n="features.ai.title">AI-alapú szövegfelismerés</h3>
+                    <p class="feature-desc" data-i18n="features.ai.desc">Precíz adatkinyerés szkennelt katalóguscédulákból mesterséges intelligencia segítségével</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title" data-i18n="features.search.title">Intelligens keresés</h3>
+                    <p class="feature-desc" data-i18n="features.search.desc">Gyors és pontos keresés a katalógusban fejlett keresési algoritmusokkal</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 21H17C18.1046 21 19 20.1046 19 19V9.41421C19 8.88378 18.7893 8.37507 18.4142 8L14 3.58579C13.6249 3.21071 13.1162 3 12.5858 3H7C5.89543 3 5 3.89543 5 5V19C5 20.1046 5.89543 21 7 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 3V7C13 8.10457 13.8954 9 15 9H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title" data-i18n="features.documents.title">Dokumentumkezelés</h3>
+                    <p class="feature-desc" data-i18n="features.documents.desc">Szkennelt dokumentumok és PDF fájlok megtekintése és kezelése egy helyen</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 16V17C4 18.6569 5.34315 20 7 20H17C18.6569 20 20 18.6569 20 17V16M16 12L12 16M12 16L8 12M12 16V4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title" data-i18n="features.export.title">Szabványos export</h3>
+                    <p class="feature-desc" data-i18n="features.export.desc">Export Excel és USMARC formátumba, kompatibilis könyvtári rendszerekkel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section class="workflow">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="workflow.title">Hogyan működik?</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-i18n="workflow.subtitle">Három egyszerű lépésben a digitális katalógusig</p>
+            <div class="workflow-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper workflowSwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Step 1 -->
+                        <div class="swiper-slide">
+                            <div class="workflow-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <div class="step-image">
+                                        <img src="img/product_1.png" alt="Import" class="step-img">
+                                    </div>
+                                    <h3 class="step-title" data-i18n="workflow.step1.title">Importálás és Digitalizálás</h3>
+                                    <p class="step-desc" data-i18n="workflow.step1.desc1">Importáljuk az adatokat külső adatbázisokból vagy fájlokból, vagy digitalizáljuk szkennelt képekből és PDF-ekből.</p>
+                                    <p class="step-desc" data-i18n="workflow.step1.desc2">Az AI automatikusan felismeri és kinyeri az adatokat a dokumentumokból.</p>
+                                    <ul class="step-list">
+                                        <li data-i18n="workflow.step1.item1">Digitalizálás szkennelt képekből</li>
+                                        <li data-i18n="workflow.step1.item2">Digitalizálás PDF dokumentumokból</li>
+                                        <li data-i18n="workflow.step1.item3">Importálás külső adatbázisokból</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="swiper-slide">
+                            <div class="workflow-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <div class="step-image">
+                                        <img src="img/product_2.png" alt="Browse and Search" class="step-img">
+                                    </div>
+                                    <h3 class="step-title" data-i18n="workflow.step2.title">Böngészés és Keresés</h3>
+                                    <p class="step-desc" data-i18n="workflow.step2.desc1">Böngéssze katalogizált adatait a Katalógus Plusz rendszerében.</p>
+                                    <p class="step-desc" data-i18n="workflow.step2.desc2">Tekintse meg az eredeti szkennelt dokumentumokat, használja a fejlett keresési funkciókat.</p>
+                                    <ul class="step-list">
+                                        <li data-i18n="workflow.step2.item1">Katalógus adatok böngészése</li>
+                                        <li data-i18n="workflow.step2.item2">Eredeti dokumentumok megtekintése</li>
+                                        <li data-i18n="workflow.step2.item3">Fejlett keresési lehetőségek</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="swiper-slide">
+                            <div class="workflow-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <div class="step-image">
+                                        <img src="img/product_3.png" alt="Export" class="step-img">
+                                    </div>
+                                    <h3 class="step-title" data-i18n="workflow.step3.title">Exportálás</h3>
+                                    <p class="step-desc" data-i18n="workflow.step3.desc1">Exportálja adatait Excel formátumba vagy USMARC számozott oszlopfejlécekkel.</p>
+                                    <p class="step-desc" data-i18n="workflow.step3.desc2">Az exportált fájlok kompatibilisek a legtöbb könyvtári kezelőrendszerrel.</p>
+                                    <ul class="step-list">
+                                        <li data-i18n="workflow.step3.item1">Excel formátum</li>
+                                        <li data-i18n="workflow.step3.item2">USMARC tábla formátum</li>
+                                        <li data-i18n="workflow.step3.item3">Könyvtári rendszerekkel kompatibilis</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Promise Section -->
+    <section class="value-callout">
+        <div class="container">
+            <div class="value-callout-card" data-aos="fade-up">
+                <h3 class="value-callout-title" data-i18n="callout.title">Mit kérünk Öntől? Csupán a cédulák továbbítását.</h3>
+                <p class="value-callout-text" data-i18n="callout.subtitle">Mit adunk? Teljesen digitalizált adatbázist a Katalógus Plusz kezelőszoftverrel, hogy azonnal használatba vehesse.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results">
+        <div class="container">
+            <p class="results-intro" data-aos="fade-up" data-i18n="results.intro">A program egyaránt alkalmas muzeális régi könyv-állomány és modern könyvek katalógus-céduláinak feldolgozására.</p>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100" data-i18n="results.title">Eredmények számokban</h2>
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 2V5M16 2V5M3.5 9.09H20.5M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.6947 13.7H15.7037M15.6947 16.7H15.7037M11.9955 13.7H12.0045M11.9955 16.7H12.0045M8.29431 13.7H8.30329M8.29431 16.7H8.30329" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-value" data-i18n="results.stat1.value">3 hónap</div>
+                    <div class="stat-label" data-i18n="results.stat1.label">Feldolgozási idő</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-value" data-i18n="results.stat2.value">5-10 év</div>
+                    <div class="stat-label" data-i18n="results.stat2.label">Munka megtakarítás</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-value" data-i18n="results.stat3.value">10x</div>
+                    <div class="stat-label" data-i18n="results.stat3.label">Gyorsabb keresés</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="pricing.title">Árazás</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-i18n="pricing.subtitle">Válassza ki az Önnek megfelelő csomagot</p>
+
+            <div class="pricing-grid-full">
+                <!-- Package 1 - Small -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h3 class="pricing-plan" data-i18n="pricing.digitization.package1.name">Kis csomag</h3>
+                        <p class="pricing-range" data-i18n="pricing.digitization.package1.range">1 - 10 000 cédula</p>
+                        <div class="pricing-amount">
+                            <span class="price" data-i18n="pricing.digitization.package1.price">100</span>
+                        </div>
+                        <p class="pricing-unit" data-i18n="pricing.digitization.package1.unit">HUF / cédula</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li data-i18n="pricing.features.feature1">AI-alapú szövegfelismerés</li>
+                            <li data-i18n="pricing.features.feature2">Automatikus adatkinyerés</li>
+                            <li data-i18n="pricing.features.feature3">Adatbázis tárolás</li>
+                            <li data-i18n="pricing.features.feature4">Export lehetőségek</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Package 2 - Medium (Popular) -->
+                <div class="pricing-card pricing-card-popular" data-aos="fade-up" data-aos-delay="200">
+                    <div class="popular-badge" data-i18n="pricing.digitization.package2.popular">Népszerű</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-plan" data-i18n="pricing.digitization.package2.name">Közepes csomag</h3>
+                        <p class="pricing-range" data-i18n="pricing.digitization.package2.range">10 000 - 50 000 cédula</p>
+                        <div class="pricing-amount">
+                            <span class="price" data-i18n="pricing.digitization.package2.price">90</span>
+                        </div>
+                        <p class="pricing-unit" data-i18n="pricing.digitization.package2.unit">HUF / cédula</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li data-i18n="pricing.features.feature1">AI-alapú szövegfelismerés</li>
+                            <li data-i18n="pricing.features.feature2">Automatikus adatkinyerés</li>
+                            <li data-i18n="pricing.features.feature3">Adatbázis tárolás</li>
+                            <li data-i18n="pricing.features.feature4">Export lehetőségek</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Package 3 - Large -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-header">
+                        <h3 class="pricing-plan" data-i18n="pricing.digitization.package3.name">Nagy csomag</h3>
+                        <p class="pricing-range" data-i18n="pricing.digitization.package3.range">50 000+ cédula</p>
+                        <div class="pricing-amount">
+                            <span class="price" data-i18n="pricing.digitization.package3.price">80</span>
+                        </div>
+                        <p class="pricing-unit" data-i18n="pricing.digitization.package3.unit">HUF / cédula</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li data-i18n="pricing.features.feature1">AI-alapú szövegfelismerés</li>
+                            <li data-i18n="pricing.features.feature2">Automatikus adatkinyerés</li>
+                            <li data-i18n="pricing.features.feature3">Adatbázis tárolás</li>
+                            <li data-i18n="pricing.features.feature4">Export lehetőségek</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Package 4 - Custom Import -->
+                <div class="pricing-card pricing-card-custom" data-aos="fade-up" data-aos-delay="400">
+                    <div class="pricing-header pricing-header-custom">
+                        <h3 class="pricing-plan" data-i18n="pricing.import.custom.name">Egyedi árajánlat</h3>
+                        <p class="pricing-range" data-i18n="pricing.import.custom.range">Külső rendszerből</p>
+                        <div class="pricing-amount">
+                            <span class="price-text" data-i18n="pricing.import.custom.price">Kérjen árajánlatot</span>
+                        </div>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li data-i18n="pricing.import.features.feature1">Külső SQL adatimport</li>
+                            <li data-i18n="pricing.import.features.feature2">Excel, PDF import</li>
+                            <li data-i18n="pricing.import.features.feature3">Adatbázis tárolás</li>
+                            <li data-i18n="pricing.import.features.feature4">Export lehetőségek</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client License -->
+            <div class="client-license" data-aos="fade-up" data-aos-delay="200">
+                <div class="client-content">
+                    <h3 class="client-title" data-i18n="pricing.client.title">Katalógus Plusz kliens</h3>
+                    <div class="client-price">
+                        <span class="price" data-i18n="pricing.client.price">30 000</span>
+                        <span class="currency" data-i18n="pricing.client.unit">HUF</span>
+                    </div>
+                    <p class="client-desc" data-i18n="pricing.client.desc">Egyszeri licencdíj</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-card" data-aos="fade-up">
+                    <div class="contact-card-header">
+                        <h2 class="contact-card-title section-title" data-i18n="contact.title">Kapcsolat</h2>
+                        <p class="contact-card-subtitle section-subtitle" data-i18n="contact.subtitle">Vegye fel velünk a kapcsolatot további információkért</p>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Név" data-i18n="contact.form.name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email" data-i18n="contact.form.email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Telefon (opcionális)" data-i18n="contact.form.phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Üzenet" rows="5" data-i18n="contact.form.message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" data-i18n="contact.form.submit">Üzenet küldése</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p class="footer-text">&copy; 2025 Arrabona. <span data-i18n="footer.rights">Minden jog fenntartva.</span></p>
+                    <p class="footer-text"><a href="/" style="color: inherit; text-decoration: none; opacity: 0.7; hover-opacity: 1;" data-i18n="footer.backLink">← Vissza az Arrabona szolgáltatásokhoz</a></p>
+                </div>
+                <p class="footer-text">Katalógus Plusz</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Language Files -->
+    <script src="js/lang_ocr_hun.js"></script>
+    <script src="js/lang_ocr_eng.js"></script>
+
+    <!-- Main JS (shared) -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

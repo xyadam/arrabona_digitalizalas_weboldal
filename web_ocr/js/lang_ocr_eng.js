@@ -1,4 +1,4 @@
-const LANG_EN = {
+const LANG_OCR_EN = {
     hero: {
         title: "Katalógus Plusz",
         subtitle: "Professional library catalog digitization and managing software"
@@ -136,6 +136,7 @@ const LANG_EN = {
         }
     },
     footer: {
-        rights: "All rights reserved."
+        rights: "All rights reserved.",
+        backLink: "← Back to Arrabona Services"
     }
 };

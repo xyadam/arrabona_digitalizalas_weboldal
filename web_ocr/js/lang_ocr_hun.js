@@ -1,4 +1,4 @@
-const LANG_HU = {
+const LANG_OCR_HU = {
     hero: {
         title: "Katalógus Plusz",
         subtitle: "Professzionális könyvtári katalógus digitalizálás és kezelő szoftver"
@@ -136,6 +136,7 @@ const LANG_HU = {
         }
     },
     footer: {
-        rights: "Minden jog fenntartva."
+        rights: "Minden jog fenntartva.",
+        backLink: "← Vissza az Arrabona szolgáltatásokhoz"
     }
 };

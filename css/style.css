@@ -1191,3 +1191,225 @@ section {
         font-size: 3rem;
     }
 }
+
+/* ========== Home Page Specific Styles ========== */
+.hero-home {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.hero-home .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-home .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.hero-home .hero-contact {
+    display: none;
+}
+
+.hero:has(.hero-home) {
+    padding: 30px 0 30px;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Products Grid - Home Page */
+.products {
+    background-color: var(--light-gray);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.product-card {
+    background-color: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    width: 100%;
+    height: 280px;
+    background-color: var(--border-gray);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-content {
+    padding: 2rem;
+}
+
+.product-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+.product-description {
+    color: var(--gray);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.product-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    color: var(--white);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.product-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(30, 58, 138, 0.3);
+}
+
+/* Intro Section */
+.intro {
+    background-color: var(--white);
+    padding: 60px 0;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    color: var(--gray);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Pricing Note Section */
+.pricing-note {
+    background-color: var(--light-gray);
+    padding: 40px 0;
+}
+
+.pricing-note-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-left: 5px solid var(--primary-blue);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-note-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+.pricing-note-text {
+    color: var(--gray);
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.pricing-note-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Form Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(30, 58, 138, 0.3);
+}
+
+/* ========== Responsive Updates ========== */
+@media (max-width: 1200px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-home {
+        text-align: center;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .product-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-image {
+        height: 200px;
+    }
+
+    .product-content {
+        padding: 1.5rem;
+    }
+
+    .product-title {
+        font-size: 1.5rem;
+    }
+
+    .pricing-note-card {
+        padding: 1.5rem;
+    }
+}
