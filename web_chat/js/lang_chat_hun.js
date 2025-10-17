@@ -63,10 +63,9 @@ const LANG_CHAT_HU = {
         }
     },
     pricingNote: {
-        title: "Árazás – AI kereshető adatbázis készítése",
-        intro: "Az alábbi árak a dokumentumok feldolgozásáért és kereshetővé tételéért fizetendő egyszeri díjak.",
-        aiCostNote: "Az AI beszélgetéshez a saját AI előfizetését használja (pl. saját Google AI). Mi biztosítjuk a csatlakozást a helyi adatbázisához. Átlagos költség: ~10 Ft/kérdés.",
-        documentNote: "Az Ön elküldött dokumentumait a feldolgozás során kereshetővé tesszük – ezt a díjat itt fizeti meg."
+        title: "Árazás – Dokumentumfeldolgozás és AI keresés",
+        intro: "Küldje el a beszkennelt vagy fényképezett dokumentumait - a szövegfelismeréssel feldolgozzuk és AI-kereshetővé tesszük őket. Az alábbi árak a feldolgozás egyszeri díjai oldal szerint.",
+        aiCostNote: "Az AI beszélgetéshez saját AI előfizetését használja (pl. Google AI). Mi biztosítjuk a chat felületet és a kapcsolatot a helyi adatbázisához. Átlagos költség: ~10 Ft/kérdés."
     },
     pricing: {
         title: "Árazás",

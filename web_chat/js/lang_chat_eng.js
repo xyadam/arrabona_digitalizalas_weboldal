@@ -63,10 +63,9 @@ const LANG_CHAT_EN = {
         }
     },
     pricingNote: {
-        title: "Pricing – AI-Searchable Database Creation",
-        intro: "The prices below are one-time fees for document processing and making them searchable.",
-        aiCostNote: "For AI conversations, you use your own AI subscription (e.g., your own Google AI). We provide the connection to your local database. Average cost: ~10 HUF/question.",
-        documentNote: "We make the documents you send searchable during processing – this is the fee paid here."
+        title: "Pricing – Document Processing and AI Search",
+        intro: "Send us your scanned or photographed documents - we process them with text recognition and make them AI-searchable. The prices below are one-time fees for processing per page.",
+        aiCostNote: "For AI conversations, use your own AI subscription (e.g., Google AI). We provide the chat interface and connection to your local database. Average cost: ~10 HUF/question."
     },
     pricing: {
         title: "Pricing",
