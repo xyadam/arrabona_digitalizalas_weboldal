@@ -985,6 +985,18 @@ section {
     z-index: 1;
 }
 
+.contact-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-logo-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
 .contact-card-title {
     margin-bottom: 1rem;
     color: var(--primary-blue);
