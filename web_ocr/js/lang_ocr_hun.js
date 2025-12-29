@@ -21,7 +21,7 @@ const LANG_OCR_HU = {
         }
     },
     features: {
-        title: "Miért válassza a Catalog+-t?",
+        title: "Miért válassza a Catalog+ szoftvert?",
         ai: {
             title: "AI-alapú szövegfelismerés",
             desc: "Precíz adatkinyerés szkennelt katalóguscédulákból mesterséges intelligencia segítségével"
