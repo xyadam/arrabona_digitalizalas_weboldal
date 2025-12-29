@@ -4,7 +4,7 @@
 
 Ez egy modern, reszponzív **multi-termékes marketing weboldal** az **Arrabona** által fejlesztett két szoftverre:
 
-1. **Katalógus Plusz v1.2** - Professzionális könyvtári digitalizálási és import szoftver
+1. **Catalog+ v1.2** - Professzionális könyvtári digitalizálási és import szoftver
 2. **Libra AI** - AI alapú dokumentum keresési és chat interfész
 
 **Weboldal célja**: Marketing és lead generálás mindkét szoftverhez
@@ -16,7 +16,7 @@ Ez egy modern, reszponzív **multi-termékes marketing weboldal** az **Arrabona*
 
 ## Szoftveres Szolgáltatások Leírása
 
-### 1. KATALÓGUS PLUSZ v1.2 - Könyvtári Digitalizálási Platform
+### 1. CATALOG+ v1.2 - Könyvtári Digitalizálási Platform
 
 **Fő célja**: Professzionális könyvtári katalógus digitalizálása, adatkezelése és export
 
@@ -74,7 +74,7 @@ Ez egy modern, reszponzív **multi-termékes marketing weboldal** az **Arrabona*
 ```
 arrabona_digitalizalas_weboldal/
 ├── index.html              # HOMEPAGE - Termékkiválasztó (2 kártya)
-├── web_ocr/index.html      # Katalógus Plusz marketing oldal
+├── web_ocr/index.html      # Catalog+ marketing oldal
 │   ├── js/lang_ocr_hun.js, lang_ocr_eng.js
 │   └── img/product_*.png
 ├── web_chat/index.html     # Libra AI marketing oldal
@@ -88,7 +88,7 @@ arrabona_digitalizalas_weboldal/
 
 **Fájlstruktúra Logikája**:
 - **Root (/)**: Homepage - termékkiválasztó oldal
-- **web_ocr/**: Katalógus Plusz specifikus oldal + erőforrások
+- **web_ocr/**: Catalog+ specifikus oldal + erőforrások
 - **web_chat/**: Libra AI specifikus oldal + erőforrások
 - **css/ + js/ (root)**: Osztott stílus és logika mindhárom oldalhoz
 - **img/ (root)**: Megosztott képek (logó, termékthumbnailok)
@@ -103,7 +103,7 @@ arrabona_digitalizalas_weboldal/
 - `.hero-home .hero-title` - 2.5rem; `.hero-home .hero-subtitle` - 1.1rem
 - `.products-grid` - 2 oszlopú layout
 
-### Katalógus Plusz oldal (web_ocr/index.html)
+### Catalog+ oldal (web_ocr/index.html)
 **Szerkezet**: Header → Hero → Features (4 kártya) → Workflow (3 lépés Swiper) → Pricing (4 csomag + kliens licensz 30k Ft) → Contact → Footer
 
 ### Libra AI oldal (web_chat/index.html)

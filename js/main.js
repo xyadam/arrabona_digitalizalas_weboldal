@@ -170,7 +170,7 @@ if (contactForm) {
 
         const subjectKey = currentLanguage === 'hu' ? 'Inquiry' : 'Inquiry';
         const productName = window.location.pathname.includes('/web_ocr/')
-            ? 'Katalógus Plusz'
+            ? 'Catalog+'
             : window.location.pathname.includes('/web_chat/')
             ? 'Libra AI'
             : 'Arrabona Services';

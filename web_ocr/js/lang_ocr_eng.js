@@ -1,7 +1,7 @@
 const LANG_OCR_EN = {
     nav: { home: "Home" },
     hero: {
-        title: "Katalógus Plusz",
+        title: "Catalog+",
         subtitle: "Professional library catalog digitization and managing software"
     },
     results: {
@@ -21,7 +21,7 @@ const LANG_OCR_EN = {
         }
     },
     features: {
-        title: "Why Choose Katalógus Plusz?",
+        title: "Why Choose Catalog+?",
         ai: {
             title: "AI-powered text recognition",
             desc: "Precise data extraction from scanned catalog cards using artificial intelligence"
@@ -52,7 +52,7 @@ const LANG_OCR_EN = {
         },
         step2: {
             title: "Browse and Search",
-            desc1: "Browse your cataloged data in the Katalógus Plusz system.",
+            desc1: "Browse your cataloged data in the Catalog+ system.",
             desc2: "View original scanned documents and use advanced search features.",
             item1: "Browse catalog data",
             item2: "View original documents",
@@ -69,7 +69,7 @@ const LANG_OCR_EN = {
     },
     callout: {
         title: "What do we need from you? Simply the catalog cards.",
-        subtitle: "What do we deliver? A fully digitized database together with the Katalógus Plusz management software so you can start using it immediately."
+        subtitle: "What do we deliver? A fully digitized database together with the Catalog+ management software so you can start using it immediately."
     },
     pricing: {
         title: "Pricing",
@@ -111,7 +111,7 @@ const LANG_OCR_EN = {
             }
         },
         client: {
-            title: "Katalógus Plusz Client",
+            title: "Catalog+ Client",
             price: "35,000",
             unit: "HUF",
             desc: "One-time license fee"

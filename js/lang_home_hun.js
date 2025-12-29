@@ -7,7 +7,7 @@ const LANG_HOME_HU = {
     products: {
         title: "Termékek",
         ocr: {
-            title: "Katalógus Plusz",
+            title: "Catalog+",
             description: "Könyvtári katalógus digitalizálása, adatkezelés és export. Testreszabható keresési funkció az összes feldolgozott dokumentumon.",
             button: "Megtekintés"
         },

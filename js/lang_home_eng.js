@@ -7,7 +7,7 @@ const LANG_HOME_EN = {
     products: {
         title: "Products",
         ocr: {
-            title: "Katalógus Plusz",
+            title: "Catalog+",
             description: "Library catalog digitization, data management and export. Customizable search functionality across all processed documents.",
             button: "View"
         },

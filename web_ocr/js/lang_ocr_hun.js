@@ -1,7 +1,7 @@
 const LANG_OCR_HU = {
     nav: { home: "Főoldal" },
     hero: {
-        title: "Katalógus Plusz",
+        title: "Catalog+",
         subtitle: "Professzionális könyvtári katalógus digitalizálás és kezelő szoftver"
     },
     results: {
@@ -21,7 +21,7 @@ const LANG_OCR_HU = {
         }
     },
     features: {
-        title: "Miért válassza a Katalógus Plusz-t?",
+        title: "Miért válassza a Catalog+-t?",
         ai: {
             title: "AI-alapú szövegfelismerés",
             desc: "Precíz adatkinyerés szkennelt katalóguscédulákból mesterséges intelligencia segítségével"
@@ -52,9 +52,9 @@ const LANG_OCR_HU = {
         },
         step2: {
             title: "Böngészés és Keresés",
-            desc1: "Böngéssze katalogizált adatait a Katalógus Plusz rendszerében.",
+            desc1: "Böngéssze katalogizált adatait a Catalog+ rendszerében.",
             desc2: "Tekintse meg az eredeti szkennelt dokumentumokat, használja a fejlett keresési funkciókat.",
-            item1: "Katalógus adatok böngészése",
+            item1: "Catalog+ adatok böngészése",
             item2: "Eredeti dokumentumok megtekintése",
             item3: "Fejlett keresési lehetőségek"
         },
@@ -69,7 +69,7 @@ const LANG_OCR_HU = {
     },
     callout: {
         title: "Mit kérünk Öntől? Csupán a cédulák továbbítását.",
-        subtitle: "Mit adunk? Teljesen digitalizált adatbázist a Katalógus Plusz kezelőszoftverrel, hogy azonnal használatba vehesse."
+        subtitle: "Mit adunk? Teljesen digitalizált adatbázist a Catalog+ kezelőszoftverrel, hogy azonnal használatba vehesse."
     },
     pricing: {
         title: "Árazás",
@@ -111,7 +111,7 @@ const LANG_OCR_HU = {
             }
         },
         client: {
-            title: "Katalógus Plusz kliens",
+            title: "Catalog+ kliens",
             price: "35 000",
             unit: "HUF",
             desc: "Egyszeri licencdíj"
