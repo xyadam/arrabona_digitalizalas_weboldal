@@ -91,7 +91,7 @@ const LANG_OCR_HU = {
             },
             package3: {
                 name: "Nagy csomag",
-                range: "550 000 - 1 000 000 cédula",
+                range: "500 000 - 1 000 000 cédula",
                 price: "80",
                 unit: "HUF / cédula"
             }

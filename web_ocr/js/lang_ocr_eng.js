@@ -91,7 +91,7 @@ const LANG_OCR_EN = {
             },
             package3: {
                 name: "Large Package",
-                range: "550,000 - 1,000,000 cards",
+                range: "500,000 - 1,000,000 cards",
                 price: "80",
                 unit: "HUF / card"
             }
