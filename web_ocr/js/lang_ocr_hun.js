@@ -9,7 +9,7 @@ const LANG_OCR_HU = {
         title: "Eredmények számokban",
         stat1: {
             value: "3 hónap",
-            label: "Feldolgozási idő"
+            label: "feldolgozási idő (100.000 katalógus cédulánként)"
         },
         stat2: {
             value: "5-10 év",
@@ -78,20 +78,20 @@ const LANG_OCR_HU = {
             title: "Digitalizálás (PDF-ből vagy fényképekből)",
             package1: {
                 name: "Kis csomag",
-                range: "1 - 10 000 cédula",
+                range: "250 000 alatt",
                 price: "100",
                 unit: "HUF / cédula"
             },
             package2: {
                 name: "Közepes csomag",
-                range: "10 000 - 50 000 cédula",
+                range: "250 000 - 500 000 cédula",
                 price: "90",
                 unit: "HUF / cédula",
                 popular: "Népszerű"
             },
             package3: {
                 name: "Nagy csomag",
-                range: "50 000+ cédula",
+                range: "550 000 - 1 000 000 cédula",
                 price: "80",
                 unit: "HUF / cédula"
             }

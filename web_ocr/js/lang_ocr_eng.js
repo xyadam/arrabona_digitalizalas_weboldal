@@ -9,7 +9,7 @@ const LANG_OCR_EN = {
         title: "Results in Numbers",
         stat1: {
             value: "3 months",
-            label: "Processing time"
+            label: "processing time (per 100,000 catalog cards)"
         },
         stat2: {
             value: "5-10 years",
@@ -78,20 +78,20 @@ const LANG_OCR_EN = {
             title: "Digitization (from PDFs or photos)",
             package1: {
                 name: "Small Package",
-                range: "1 - 10,000 cards",
+                range: "Under 250,000 cards",
                 price: "100",
                 unit: "HUF / card"
             },
             package2: {
                 name: "Medium Package",
-                range: "10,000 - 50,000 cards",
+                range: "250,000 - 500,000 cards",
                 price: "90",
                 unit: "HUF / card",
                 popular: "Popular"
             },
             package3: {
                 name: "Large Package",
-                range: "50,000+ cards",
+                range: "550,000 - 1,000,000 cards",
                 price: "80",
                 unit: "HUF / card"
             }
