@@ -4,7 +4,8 @@
 
 Static public website for library staff and collection managers. The repository
 root is the existing product selector; `web_chat/` contains the separate Libra AI
-page. `web_ocr/` is the CatalogPlus informational website with the approved white,
+page for RAG-based search and chat over OCR-extracted document data.
+`web_ocr/` is the CatalogPlus informational website with the approved white,
 light beige and dark green design. No build tool or backend is required.
 
 GitHub Pages deploys `master` from the repository root. CatalogPlus is served at
@@ -35,8 +36,20 @@ Only commit or push when explicitly requested by Adam.
 Edit copy in the language files. Keep initial Hungarian HTML consistent when
 changing content so it remains useful before JavaScript loads. Never load the
 legacy root `js/main.js` or its shared stylesheet into the CatalogPlus page.
+CSS and script URLs in index.html carry a version query; update it when those
+assets change so returning visitors do not mix old language files with new code.
 
 ## Content boundaries
+
+The core benefit is making an existing paper catalogue searchable and reusable
+as digital data. AI extracts and organises the entries so library staff do not
+have to type them in individually. Customers receive a searchable database and
+can purchase the CatalogPlus client to search, enrich, edit and export records.
+
+Write for nontechnical librarians, including older beginners: explain what they
+receive and how it helps their everyday work, with concise, calm wording. Avoid
+technical implementation detail, aggressive “do this, not that” slogans and
+patronising explanations. Highlight CatalogPlus selectively in bold green.
 
 Describe AI catalogue processing, a searchable database and an optional desktop
 client. Cover handwritten cards, printed records, tables and indexes generally;
