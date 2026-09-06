@@ -1,143 +1,131 @@
-const LANG_OCR_HU = {
-    nav: { home: "Főoldal" },
-    hero: {
-        title: "Catalog+",
-        subtitle: "Professzionális könyvtári katalógus digitalizálás és kezelő szoftver"
-    },
-    results: {
-        intro: "A program egyaránt alkalmas muzeális régi könyv-állomány és modern könyvek katalógus-céduláinak feldolgozására.",
-        title: "Eredmények számokban",
-        stat1: {
-            value: "3 hónap",
-            label: "feldolgozási idő (100.000 katalógus cédulánként)"
-        },
-        stat2: {
-            value: "5-10 év",
-            label: "Munka megtakarítás"
-        },
-        stat3: {
-            value: "10x",
-            label: "Gyorsabb keresés"
-        }
-    },
-    features: {
-        title: "Miért válassza a Catalog+ szoftvert?",
-        ai: {
-            title: "AI-alapú szövegfelismerés",
-            desc: "Precíz adatkinyerés szkennelt katalóguscédulákból mesterséges intelligencia segítségével"
-        },
-        search: {
-            title: "Intelligens keresés",
-            desc: "Gyors és pontos keresés a katalógusban fejlett keresési algoritmusokkal"
-        },
-        documents: {
-            title: "Dokumentumkezelés",
-            desc: "Szkennelt dokumentumok és PDF fájlok megtekintése és kezelése egy helyen"
-        },
-        export: {
-            title: "Szabványos export",
-            desc: "Export Excel formátumba és USMARC számozott oszlopfejlécekkel, kompatibilis könyvtári rendszerekkel"
-        }
-    },
-    workflow: {
-        title: "Hogyan működik?",
-        subtitle: "Három egyszerű lépésben a digitális katalógusig",
-        step1: {
-            title: "Importálás és Digitalizálás",
-            desc1: "Importáljuk az adatokat külső adatbázisokból vagy fájlokból, vagy digitalizáljuk szkennelt képekből és PDF-ekből.",
-            desc2: "Az AI automatikusan felismeri és kinyeri az adatokat a dokumentumokból.",
-            item1: "Digitalizálás szkennelt képekből",
-            item2: "Digitalizálás PDF dokumentumokból",
-            item3: "Importálás külső adatbázisokból"
-        },
-        step2: {
-            title: "Böngészés és Keresés",
-            desc1: "Böngéssze katalogizált adatait a Catalog+ rendszerében.",
-            desc2: "Tekintse meg az eredeti szkennelt dokumentumokat, használja a fejlett keresési funkciókat.",
-            item1: "Catalog+ adatok böngészése",
-            item2: "Eredeti dokumentumok megtekintése",
-            item3: "Fejlett keresési lehetőségek"
-        },
-        step3: {
-            title: "Exportálás",
-            desc1: "Exportálja adatait Excel formátumba vagy USMARC számozott oszlopfejlécekkel.",
-            desc2: "Az exportált fájlok kompatibilisek a legtöbb könyvtári kezelőrendszerrel.",
-            item1: "Excel formátum",
-            item2: "USMARC számozott oszlopfejlécek",
-            item3: "Könyvtári rendszerekkel kompatibilis"
-        }
-    },
-    callout: {
-        title: "Mit kérünk Öntől? Csupán a cédulák továbbítását.",
-        subtitle: "Mit adunk? Teljesen digitalizált adatbázist a Catalog+ kezelőszoftverrel, hogy azonnal használatba vehesse."
-    },
-    pricing: {
-        title: "Árazás",
-        subtitle: "Válassza ki az Önnek megfelelő csomagot",
-        digitization: {
-            title: "Digitalizálás (PDF-ből vagy fényképekből)",
-            package1: {
-                name: "Kis csomag",
-                range: "250 000 alatt",
-                price: "100",
-                unit: "HUF / cédula"
-            },
-            package2: {
-                name: "Közepes csomag",
-                range: "250 000 - 500 000 cédula",
-                price: "90",
-                unit: "HUF / cédula",
-                popular: "Népszerű"
-            },
-            package3: {
-                name: "Nagy csomag",
-                range: "500 000 - 1 000 000 cédula",
-                price: "80",
-                unit: "HUF / cédula"
-            }
-        },
-        import: {
-            title: "Külső rendszerből importálás",
-            custom: {
-                name: "Egyedi árajánlat",
-                range: "Külső rendszerből",
-                price: "Kérjen árajánlatot"
-            },
-            features: {
-                feature1: "Külső SQL adatimport",
-                feature2: "Excel, PDF import",
-                feature3: "Adatbázis tárolás",
-                feature4: "Export lehetőségek"
-            }
-        },
-        client: {
-            title: "Catalog+ kliens",
-            price: "35 000",
-            unit: "HUF",
-            desc: "Egyszeri licencdíj"
-        },
-        features: {
-            feature1: "AI-alapú szövegfelismerés",
-            feature2: "Automatikus adatkinyerés",
-            feature3: "Adatbázis tárolás",
-            feature4: "Export lehetőségek"
-        }
-    },
-    contact: {
-        title: "Kapcsolat",
-        subtitle: "Vegye fel velünk a kapcsolatot további információkért",
-        company: "Arrabona",
-        note: "A digitalizálási folyamatot teljes egészében átvállaljuk, Önnek csak a cédulákat kell eljuttatnia hozzánk.",
-        form: {
-            name: "Név",
-            email: "Email",
-            phone: "Telefon (opcionális)",
-            message: "Üzenet",
-            submit: "Üzenet küldése"
-        }
-    },
-    footer: {
-        rights: "Minden jog fenntartva.",
-        backLink: "← Vissza az Arrabona szolgáltatásokhoz"
-    }
+// CatalogPlus Hungarian copy. Keys match data-i18n attributes in index.html.
+window.LANG_OCR_HU = {
+  "page.01": "Ugrás a tartalomra",
+  "header.01": "Mit kap?",
+  "header.02": "Működés",
+  "header.03": "Funkciók",
+  "header.04": "Díjak",
+  "header.05": "<span class=\"dot\"></span> Interaktív bemutató",
+  "attekintes.01": "CatalogPlus <span>/</span> Könyvtári digitalizálás és katalóguskezelés",
+  "attekintes.02": "Könyvtáraknak és gyűjteménykezelőknek",
+  "attekintes.03": "A cédulákból<br> könnyen kereshető<br> katalógus.",
+  "attekintes.04": "A már beszkennelt katalógus adatait AI segítségével feldolgozzuk, így nem kell azokat egyesével begépelni. Kereshető adatbázist készítünk, amelyet a <strong class=\"product-highlight\">CatalogPlus programban</strong> böngészhet, javíthat és bővíthet. Az adatok Excelbe is kimenthetők további felhasználásra.",
+  "attekintes.05": "Hogyan segít a könyvtárnak? <span class=\"arrow\">↗</span>",
+  "attekintes.06": "Díjak megtekintése",
+  "attekintes.07": "<span><span class=\"dot\"></span> CatalogPlus · asztali alkalmazás</span><span>Programkép</span>",
+  "attekintes.08": "<strong>Keresés, könyvadatok és az eredeti cédula egy helyen.</strong><span>Kattintson a programkép nagyításához.</span>",
+  "attekintes.09": "<strong>Kevesebb gépelés</strong><span>A feldolgozást mi végezzük</span>",
+  "attekintes.10": "<strong>Könnyebb keresés</strong><span>Szerző, cím vagy év alapján</span>",
+  "attekintes.11": "<strong>Átlátható adatok</strong><span>Az eredeti cédula is látható</span>",
+  "attekintes.12": "<strong>Továbbadható listák</strong><span>Excelben is használhatók</span>",
+  "hozzaferes.01": "A gyűjtemény értéke megmarad",
+  "hozzaferes.02": "A régi nyilvántartás<br> új módon válik hozzáférhetővé.",
+  "hozzaferes.03": "A papírcédulákon őrzött tudás kereshetővé válik, az eredeti forrás pedig továbbra is visszanézhető.",
+  "hozzaferes.04": "01 / Mit kap a könyvtár?",
+  "hozzaferes.05": "A meglévő katalógus<br> digitálisan is használhatóvá válik.",
+  "hozzaferes.06": "A könyvadatok könnyen kereshetők, kiegészíthetők és tovább feldolgozhatók. Az eredeti cédulák képe közben megmarad az ellenőrzéshez.",
+  "hozzaferes.07": "<strong>Kereshető adatbázis</strong><span>A feldolgozott könyvek adataival</span>",
+  "hozzaferes.08": "<strong class=\"product-highlight\">CatalogPlus program</strong><span>Böngészéshez és adatjavításhoz</span>",
+  "hozzaferes.09": "<strong>Eredeti dokumentumok</strong><span>A részletek visszaellenőrzéséhez</span>",
+  "hozzaferes.10": "<strong>Exportálható adatok</strong><span>Excelhez és egyeztetett továbbadáshoz</span>",
+  "hozzaferes.11": "Eredmények számokban",
+  "hozzaferes.12": "Jelentős időnyereség a könyvtári munkában.",
+  "hozzaferes.13": "3 <span>hónap</span>",
+  "hozzaferes.14": "100 000 cédula feldolgozása AI segítségével",
+  "hozzaferes.15": "A cédulák adatait nem kell egyesével begépelni.",
+  "hozzaferes.16": "5–10 <span>év</span>",
+  "hozzaferes.17": "Munkamegtakarítás",
+  "hozzaferes.18": "Az AI segíti az adatok felismerését és USMARC-kereséssel történő bővítését.",
+  "hozzaferes.19": "Gyorsabb keresés",
+  "hozzaferes.20": "A digitális keresés kiváltja a papírcédulák kézi átnézését.",
+  "hozzaferes.21": "Irányadó értékek; az elérhető időnyereség az állománytól és a munkafolyamattól függ.",
+  "mukodes.01": "02 / Hogyan készül el?",
+  "mukodes.02": "A papírcéduláktól<br> a kereshető katalógusig.",
+  "mukodes.03": "A digitális képeken szereplő adatokat AI segítségével nyerjük ki, és rendezett, kereshető katalógussá alakítjuk.",
+  "mukodes.04": "A papíralapú nyilvántartástól a kereshető katalógusig.<span>Az ábra kattintással nagyítható.</span>",
+  "mukodes.05": "Cédulák és jegyzékek",
+  "mukodes.06": "A gyűjtemény meglévő papíralapú nyilvántartása.",
+  "mukodes.07": "Digitalizálás",
+  "mukodes.08": "A papíralapú anyag képként vagy PDF-ként válik feldolgozhatóvá.",
+  "mukodes.09": "AI-adatkinyerés",
+  "mukodes.10": "Mesterséges intelligenciával nyerjük ki a könyvadatokat.",
+  "mukodes.11": "Kereshető katalógus",
+  "mukodes.12": "A könyvtáros kereshet, ellenőrizhet és listát készíthet.",
+  "funkciok.01": "03 / Miben lesz könnyebb a munka?",
+  "funkciok.02": "Kevesebb keresgélés.<br> Több idő a könyvtári feladatokra.",
+  "funkciok.03": "Megtalálja, amit keres",
+  "funkciok.04": "Cím, szerző, évszám vagy jelzet alapján kereshet. A hasonló címek megtalálásában is segít a program.",
+  "funkciok.05": "Bővítheti a katalógus adatait",
+  "funkciok.06": "A beépített <strong>USMARC-keresővel</strong> más könyvtári katalógusokban kereshet. A megfelelő találat adataival kiegészítheti saját rekordjait.",
+  "funkciok.07": "Ellenőrizheti és javíthatja",
+  "funkciok.08": "A könyvadatok mellett az eredeti cédula képe is megnézhető. A pontatlan vagy hiányos mezőket javíthatja, a találatokat ellenőrizheti.",
+  "funkciok.09": "Továbbadhatja a kész listát",
+  "funkciok.10": "Az adatok Excelben is kimenthetők. A könyvtári rendszerhez szükséges átadási formátumot közösen egyeztetjük.",
+  "funkciok.11": "A CatalogPlus funkciói",
+  "funkciok.12": "Keresés, adatbővítés,<br> javítás és export.",
+  "funkciok.13": "A CatalogPlus fő funkciói.<span>Az ábra kattintással nagyítható.</span>",
+  "dijak.01": "04 / Egyszeri díjak",
+  "dijak.02": "Feldolgozás mennyiség alapján.<br> Kliensprogram számítógépenként.",
+  "dijak.03": "Nincs havidíj. A feldolgozásért egyszer fizet, a <strong class=\"product-highlight\">CatalogPlus kliensprogramot</strong> pedig igény szerint vásárolhatja meg.",
+  "dijak.04": "Kis csomag",
+  "dijak.05": "250 000 cédula alatt",
+  "dijak.06": "<strong>100 <span>Ft</span></strong><span>/ cédula · egyszeri díj</span>",
+  "dijak.07": "Katalóguscédulák AI-alapú feldolgozása képekből és PDF-ekből.",
+  "dijak.08": "<span>Adatok kinyerése és rendezése</span><span>Kereshető katalógusadatok</span>",
+  "dijak.09": "Közepes csomag",
+  "dijak.10": "250 000–499 999 cédula",
+  "dijak.11": "<strong>90 <span>Ft</span></strong><span>/ cédula · egyszeri díj</span>",
+  "dijak.12": "Katalóguscédulák AI-alapú feldolgozása képekből és PDF-ekből.",
+  "dijak.13": "<span>Adatok kinyerése és rendezése</span><span>Kereshető katalógusadatok</span>",
+  "dijak.14": "Nagy csomag",
+  "dijak.15": "500 000–1 000 000 cédula",
+  "dijak.16": "<strong>80 <span>Ft</span></strong><span>/ cédula · egyszeri díj</span>",
+  "dijak.17": "Katalóguscédulák AI-alapú feldolgozása képekből és PDF-ekből.",
+  "dijak.18": "<span>Adatok kinyerése és rendezése</span><span>Kereshető katalógusadatok</span>",
+  "dijak.19": "Számítógépen futó CatalogPlus program kapcsolódása a katalógusadatbázishoz",
+  "dijak.20": "Szerző",
+  "dijak.21": "Cím",
+  "dijak.22": "Év",
+  "dijak.23": "Katalógusadatbázis",
+  "dijak.24": "Választható kliensprogram",
+  "dijak.25": "CatalogPlus az Ön számítógépén",
+  "dijak.26": "Keresés, USMARC-alapú adatbővítés, adatjavítás és Excel-export a feldolgozott katalógusban.",
+  "dijak.27": "<strong>35 000 Ft</strong><span>/ számítógép · egyszeri díj</span>",
+  "dijak.28": "Meglévő adatok átvétele",
+  "dijak.29": "Külső rendszerből importálás",
+  "dijak.30": "Korábbi adatbázisból vagy nyilvántartásból történő átvétel, az anyag felmérése alapján.",
+  "dijak.31": "Egyedi árajánlat",
+  "dijak.32": "A díjazás alapja a feldolgozandó cédulák száma. Más típusú anyag, külső adatimport vagy 1 000 000 feletti tételszám esetén egyedi ajánlat készül. A pontos tartalmat, a végösszeget és az áfa kezelését az ajánlatban rögzítjük.",
+  "kerdesek.01": "05 / Gyakori kérdések",
+  "kerdesek.02": "Amit érdemes<br> előre tudni.",
+  "kerdesek.03": "Hogyan lesz a cédulákból kereshető adatbázis?",
+  "kerdesek.04": "A cédulák és jegyzékek digitális képeiből mesterséges intelligenciával nyerjük ki és rendezzük az adatokat. Az elkészült katalógusban kereshet, ellenőrizhet és kiegészítheti a rekordokat.",
+  "kerdesek.05": "A meglévő könyvtári rendszerünk megmaradhat?",
+  "kerdesek.06": "Igen. A <strong class=\"product-highlight\">CatalogPlus</strong> a katalógus feldolgozását segíti. A kész adatok átadását a meglévő rendszer lehetőségeihez igazítjuk, előzetes egyeztetéssel.",
+  "kerdesek.07": "Kézírásos cédulákat is fel tudnak dolgozni?",
+  "kerdesek.08": "Igen, kézzel írt és nyomtatott cédulák feldolgozása is lehetséges. A képminőség és az olvashatóság számít, ezért néhány mintán közösen felmérjük az anyagot. A bizonytalan adatokat ellenőrizni kell.",
+  "kerdesek.09": "Táblázatos jegyzékek és indexek is kezelhetők?",
+  "kerdesek.10": "Igen. Az egy oldalon több tételt tartalmazó táblázatok, könyvjegyzékek és indexek feldolgozását az anyag szerkezetéhez igazítjuk. Az egyes tételekből külön kereshető rekordok készülhetnek.",
+  "kerdesek.11": "Több számítógépen is használható?",
+  "kerdesek.12": "Igen. A kliensprogram számítógépenként vásárolható meg, egyszeri díjjal. A munkatársak hozzáféréseit külön egyeztetjük; felhasználónkénti előfizetés nincs.",
+  "footer.01": "CatalogPlus<span style=\"color:var(--gold)\">+</span>",
+  "footer.02": "AI-alapú katalógusfeldolgozás, átláthatóan.",
+  "footer.03": "Működés",
+  "footer.04": "Díjak",
+  "footer.05": "Kérdések",
+  "footer.06": "Vissza az elejére ↑",
+  "page.02": "Bezárás ×",
+  "page.03": "CatalogPlus — Kereshető katalógus, kevesebb kézi munka",
+  "page.04": "CatalogPlus – AI-alapú katalógusfeldolgozás, kereshető adatbázis és könyvtári kliensprogram.",
+  "header.06": "CatalogPlus kezdőlap",
+  "header.07": "Fő navigáció",
+  "attekintes.13": "A CatalogPlus valódi felülete — nagyítás",
+  "attekintes.14": "A CatalogPlus program valódi képernyőképe: bal oldalt keresési szűrők, jobb oldalt könyvlista és az eredeti cédula",
+  "hozzaferes.22": "Régi katalógusfiók és papírcédulák egy muzeális könyvtárban",
+  "mukodes.13": "Cédulák, digitalizálás, AI-adatkinyerés és kereshető katalógus — nagyítás",
+  "mukodes.14": "Cédulák, digitalizálás, AI-adatkinyerés és kereshető katalógus",
+  "funkciok.14": "A CatalogPlus funkciói: keresés, ellenőrzés és javítás, USMARC-keresés, Excel-export — nagyítás",
+  "funkciok.15": "Keresés a CatalogPlusban, a könyvadatok ellenőrzése és Excel-lista készítése",
+  "dijak.33": "Egyszeri cédulafeldolgozási csomagok",
+  "page.05": "Folyamatábra nagyított nézete"
 };

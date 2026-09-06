@@ -1,0 +1,4 @@
+exclude:
+  - backup
+  - AGENTS.md
+  - CLAUDE.md

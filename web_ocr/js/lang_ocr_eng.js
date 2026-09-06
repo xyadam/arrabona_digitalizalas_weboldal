@@ -1,143 +1,131 @@
-const LANG_OCR_EN = {
-    nav: { home: "Home" },
-    hero: {
-        title: "Catalog+",
-        subtitle: "Professional library catalog digitization and managing software"
-    },
-    results: {
-        intro: "The program is equally suitable for processing catalog cards of museum-quality rare books and modern book collections.",
-        title: "Results in Numbers",
-        stat1: {
-            value: "3 months",
-            label: "processing time (per 100,000 catalog cards)"
-        },
-        stat2: {
-            value: "5-10 years",
-            label: "Work saved"
-        },
-        stat3: {
-            value: "10x",
-            label: "Faster search"
-        }
-    },
-    features: {
-        title: "Why Choose Catalog+?",
-        ai: {
-            title: "AI-powered text recognition",
-            desc: "Precise data extraction from scanned catalog cards using artificial intelligence"
-        },
-        search: {
-            title: "Smart search",
-            desc: "Fast and accurate catalog search with advanced search algorithms"
-        },
-        documents: {
-            title: "Document management",
-            desc: "View and manage scanned documents and PDF files in one place"
-        },
-        export: {
-            title: "Standard export",
-            desc: "Export to Excel format with USMARC-numbered column headers, compatible with library management systems"
-        }
-    },
-    workflow: {
-        title: "How does it work?",
-        subtitle: "Three simple steps to your digital catalog",
-        step1: {
-            title: "Import and Digitization",
-            desc1: "Import data from external databases or files, or digitize from scanned images and PDFs.",
-            desc2: "AI automatically recognizes and extracts data from documents.",
-            item1: "Digitization from scanned images",
-            item2: "Digitization from PDF documents",
-            item3: "Import from external databases"
-        },
-        step2: {
-            title: "Browse and Search",
-            desc1: "Browse your cataloged data in the Catalog+ system.",
-            desc2: "View original scanned documents and use advanced search features.",
-            item1: "Browse catalog data",
-            item2: "View original documents",
-            item3: "Advanced search capabilities"
-        },
-        step3: {
-            title: "Export",
-            desc1: "Export your data to Excel format with standard or USMARC-numbered column headers.",
-            desc2: "The exported files are compatible with most library management systems.",
-            item1: "Excel format",
-            item2: "USMARC-numbered column headers",
-            item3: "Compatible with library systems"
-        }
-    },
-    callout: {
-        title: "What do we need from you? Simply the catalog cards.",
-        subtitle: "What do we deliver? A fully digitized database together with the Catalog+ management software so you can start using it immediately."
-    },
-    pricing: {
-        title: "Pricing",
-        subtitle: "Choose the package that fits your needs",
-        digitization: {
-            title: "Digitization (from PDFs or photos)",
-            package1: {
-                name: "Small Package",
-                range: "Under 250,000 cards",
-                price: "100",
-                unit: "HUF / card"
-            },
-            package2: {
-                name: "Medium Package",
-                range: "250,000 - 500,000 cards",
-                price: "90",
-                unit: "HUF / card",
-                popular: "Popular"
-            },
-            package3: {
-                name: "Large Package",
-                range: "500,000 - 1,000,000 cards",
-                price: "80",
-                unit: "HUF / card"
-            }
-        },
-        import: {
-            title: "Import from External Systems",
-            custom: {
-                name: "Custom Quote",
-                range: "From external systems",
-                price: "Request a quote"
-            },
-            features: {
-                feature1: "External SQL data import",
-                feature2: "Excel, PDF import",
-                feature3: "Database storage",
-                feature4: "Export options"
-            }
-        },
-        client: {
-            title: "Catalog+ Client",
-            price: "35,000",
-            unit: "HUF",
-            desc: "One-time license fee"
-        },
-        features: {
-            feature1: "AI-powered text recognition",
-            feature2: "Automatic data extraction",
-            feature3: "Database storage",
-            feature4: "Export options"
-        }
-    },
-    contact: {
-        title: "Contact",
-        subtitle: "Get in touch with us for more information",
-        company: "Arrabona",
-        note: "We handle the entire digitization workflow so you only need to send us the catalog cards.",
-        form: {
-            name: "Name",
-            email: "Email",
-            phone: "Phone (optional)",
-            message: "Message",
-            submit: "Send Message"
-        }
-    },
-    footer: {
-        rights: "All rights reserved.",
-        backLink: "← Back to Arrabona Services"
-    }
+// CatalogPlus English copy. Keys match data-i18n attributes in index.html.
+window.LANG_OCR_EN = {
+  "page.01": "Skip to content",
+  "header.01": "What you get",
+  "header.02": "How it works",
+  "header.03": "Features",
+  "header.04": "Pricing",
+  "header.05": "<span class=\"dot\"></span> Product overview",
+  "attekintes.01": "CatalogPlus <span>/</span> Library digitisation and catalogue management",
+  "attekintes.02": "For libraries and collection managers",
+  "attekintes.03": "Turn catalogue cards<br> into an easily<br> searchable catalogue.",
+  "attekintes.04": "We use AI to process your scanned catalogue, saving you from typing each record by hand. We create a searchable database that you can browse, correct and enrich with <strong class=\"product-highlight\">CatalogPlus</strong>. You can also export the data to Excel for further use.",
+  "attekintes.05": "How it helps your library <span class=\"arrow\">↗</span>",
+  "attekintes.06": "View pricing",
+  "attekintes.07": "<span><span class=\"dot\"></span> CatalogPlus · desktop application</span><span>Application screenshot</span>",
+  "attekintes.08": "<strong>Search, book details and the original card in one place.</strong><span>Click to enlarge the screenshot.</span>",
+  "attekintes.09": "<strong>Less typing</strong><span>We process your records</span>",
+  "attekintes.10": "<strong>Easier searching</strong><span>By author, title or year</span>",
+  "attekintes.11": "<strong>Clear records</strong><span>View the original card</span>",
+  "attekintes.12": "<strong>Shareable lists</strong><span>Ready to use in Excel</span>",
+  "hozzaferes.01": "Preserve the value of your collection",
+  "hozzaferes.02": "Your existing catalogue,<br> accessible in a new way.",
+  "hozzaferes.03": "The knowledge held on paper cards becomes searchable, while the original source remains available for reference.",
+  "hozzaferes.04": "01 / What your library gets",
+  "hozzaferes.05": "Your existing catalogue<br> becomes a digital resource.",
+  "hozzaferes.06": "Book records are easy to search, enrich and reuse. Images of the original cards remain available for checking details.",
+  "hozzaferes.07": "<strong>Searchable database</strong><span>With your processed book records</span>",
+  "hozzaferes.08": "<strong class=\"product-highlight\">CatalogPlus application</strong><span>For browsing and editing records</span>",
+  "hozzaferes.09": "<strong>Original documents</strong><span>For checking the source details</span>",
+  "hozzaferes.10": "<strong>Exportable data</strong><span>For Excel and agreed transfer formats</span>",
+  "hozzaferes.11": "Results in numbers",
+  "hozzaferes.12": "Significant time savings for your library.",
+  "hozzaferes.13": "3 <span>months</span>",
+  "hozzaferes.14": "100,000 catalogue cards processed with AI",
+  "hozzaferes.15": "No need to type in each catalogue card by hand.",
+  "hozzaferes.16": "5–10 <span>years</span>",
+  "hozzaferes.17": "Of work saved",
+  "hozzaferes.18": "AI helps recognise the data and enrich it through USMARC searches.",
+  "hozzaferes.19": "Faster searching",
+  "hozzaferes.20": "Find records digitally without searching through paper cards by hand.",
+  "hozzaferes.21": "Indicative figures; actual time savings depend on the collection and workflow.",
+  "mukodes.01": "02 / How it works",
+  "mukodes.02": "From paper cards<br> to a searchable catalogue.",
+  "mukodes.03": "We use AI to extract the information from digital images and organise it into a searchable catalogue.",
+  "mukodes.04": "From paper records to a searchable catalogue.<span>Click the illustration to enlarge it.</span>",
+  "mukodes.05": "Cards and lists",
+  "mukodes.06": "The collection’s existing paper records.",
+  "mukodes.07": "Digitisation",
+  "mukodes.08": "Paper records become images or PDFs, ready for processing.",
+  "mukodes.09": "AI data extraction",
+  "mukodes.10": "We use artificial intelligence to extract book details.",
+  "mukodes.11": "Searchable catalogue",
+  "mukodes.12": "Library staff can search, check records and create lists.",
+  "funkciok.01": "03 / Everyday benefits",
+  "funkciok.02": "Less time searching.<br> More time for library work.",
+  "funkciok.03": "Find what you need",
+  "funkciok.04": "Search by title, author, year or shelf mark. The application also helps you find similar titles.",
+  "funkciok.05": "Enrich your catalogue",
+  "funkciok.06": "Use the built-in <strong>USMARC search</strong> to search other library catalogues and add details from matching results to your own records.",
+  "funkciok.07": "Review and edit records",
+  "funkciok.08": "View the original card alongside the book details. Check results and correct incomplete or inaccurate fields.",
+  "funkciok.09": "Export your lists",
+  "funkciok.10": "Export your data to Excel. We agree on a suitable transfer format for your library system together.",
+  "funkciok.11": "CatalogPlus features",
+  "funkciok.12": "Search, enrichment,<br> editing and export.",
+  "funkciok.13": "The main features of CatalogPlus.<span>Click the illustration to enlarge it.</span>",
+  "dijak.01": "04 / One-time fees",
+  "dijak.02": "Processing priced by volume.<br> Client software per computer.",
+  "dijak.03": "There is no monthly subscription. Processing is a one-time service, and the <strong class=\"product-highlight\">CatalogPlus desktop client</strong> is available as an optional purchase.",
+  "dijak.04": "Small collection",
+  "dijak.05": "Under 250,000 cards",
+  "dijak.06": "<strong>100 <span>HUF</span></strong><span>/ card · one-time fee</span>",
+  "dijak.07": "AI processing of catalogue cards from images and PDFs.",
+  "dijak.08": "<span>Data extraction and organisation</span><span>Searchable catalogue records</span>",
+  "dijak.09": "Medium collection",
+  "dijak.10": "250,000–499,999 cards",
+  "dijak.11": "<strong>90 <span>HUF</span></strong><span>/ card · one-time fee</span>",
+  "dijak.12": "AI processing of catalogue cards from images and PDFs.",
+  "dijak.13": "<span>Data extraction and organisation</span><span>Searchable catalogue records</span>",
+  "dijak.14": "Large collection",
+  "dijak.15": "500,000–1,000,000 cards",
+  "dijak.16": "<strong>80 <span>HUF</span></strong><span>/ card · one-time fee</span>",
+  "dijak.17": "AI processing of catalogue cards from images and PDFs.",
+  "dijak.18": "<span>Data extraction and organisation</span><span>Searchable catalogue records</span>",
+  "dijak.19": "CatalogPlus on a desktop computer connected to the catalogue database",
+  "dijak.20": "Author",
+  "dijak.21": "Title",
+  "dijak.22": "Year",
+  "dijak.23": "Catalogue database",
+  "dijak.24": "Optional desktop client",
+  "dijak.25": "CatalogPlus on your computer",
+  "dijak.26": "Search, enrich records with USMARC, edit details and export to Excel.",
+  "dijak.27": "<strong>35,000 HUF</strong><span>/ computer · one-time fee</span>",
+  "dijak.28": "Transfer existing data",
+  "dijak.29": "Import from another system",
+  "dijak.30": "Transfer data from an existing database or register, following a review of the material.",
+  "dijak.31": "Individual quotation",
+  "dijak.32": "Pricing is based on the number of catalogue cards to be processed. Other materials, data imports and collections over 1,000,000 records receive an individual quotation. The scope, total price and VAT treatment are specified in the quotation.",
+  "kerdesek.01": "05 / Frequently asked questions",
+  "kerdesek.02": "Useful things<br> to know.",
+  "kerdesek.03": "How do catalogue cards become a searchable database?",
+  "kerdesek.04": "We use AI to extract and organise information from digital images of cards and lists. You can then search the catalogue, check the details and enrich the records.",
+  "kerdesek.05": "Can we keep our existing library system?",
+  "kerdesek.06": "Yes. <strong class=\"product-highlight\">CatalogPlus</strong> helps you process your catalogue. By prior agreement, we adapt the data transfer to the capabilities of your existing system.",
+  "kerdesek.07": "Can you process handwritten cards?",
+  "kerdesek.08": "Yes, both handwritten and printed cards can be processed. Image quality and legibility matter, so we assess a few samples together first. Uncertain details need to be checked.",
+  "kerdesek.09": "Can you process tables, lists and indexes?",
+  "kerdesek.10": "Yes. We adapt processing to the structure of tables, book lists and indexes containing several entries per page. Each entry can become a separate searchable record.",
+  "kerdesek.11": "Can we use it on several computers?",
+  "kerdesek.12": "Yes. The desktop client is purchased per computer for a one-time fee. Staff access is agreed separately; there is no per-user subscription.",
+  "footer.01": "CatalogPlus<span style=\"color:var(--gold)\">+</span>",
+  "footer.02": "AI catalogue processing, clearly explained.",
+  "footer.03": "How it works",
+  "footer.04": "Pricing",
+  "footer.05": "FAQ",
+  "footer.06": "Back to top ↑",
+  "page.02": "Close ×",
+  "page.03": "CatalogPlus — A searchable catalogue with less manual work",
+  "page.04": "CatalogPlus — AI catalogue processing, a searchable database and desktop software for libraries.",
+  "header.06": "CatalogPlus home",
+  "header.07": "Main navigation",
+  "attekintes.13": "Enlarge the CatalogPlus application screenshot",
+  "attekintes.14": "Actual CatalogPlus screenshot: search filters on the left, book records and the original card on the right",
+  "hozzaferes.22": "An old catalogue drawer and paper cards in a historic library",
+  "mukodes.13": "Enlarge: catalogue cards, digitisation, AI data extraction and searchable catalogue",
+  "mukodes.14": "Catalogue cards, digitisation, AI data extraction and searchable catalogue",
+  "funkciok.14": "Enlarge CatalogPlus features: search, review and editing, USMARC search and Excel export",
+  "funkciok.15": "CatalogPlus search, record review, USMARC enrichment and Excel export",
+  "dijak.33": "One-time catalogue processing packages",
+  "page.05": "Enlarged illustration"
 };
