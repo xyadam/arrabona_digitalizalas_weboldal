@@ -12,7 +12,7 @@ function setLanguage(language) {
     });
   }
   document.querySelectorAll('[data-localised-image]').forEach(image => {
-    image.src = `img/${image.dataset.localisedImage}-${language}.png`;
+    image.src = `img/${image.dataset.localisedImage}-${language}.png?v=20260907-1`;
   });
   document.querySelectorAll('[data-language]').forEach(button => {
     button.setAttribute('aria-pressed', String(button.dataset.language === language));
