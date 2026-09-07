@@ -26,11 +26,15 @@ Only commit or push when explicitly requested by Adam.
   preserves the language on refresh and in shared links; no cookies are needed.
 - `web_ocr/img/app-hu.png`: original software screenshot, intentionally Hungarian
   in both languages. `archive.png` is the shared catalogue-drawer illustration.
-- `web_ocr/img/process-hu.png`, `process-en.png`: four-stage process illustrations.
+- `web_ocr/img/process-hu.png`, `process-en.png`: five-stage process illustrations,
+  including automatic USMARC enrichment after AI extraction.
 - `web_ocr/img/features-hu.png`, `features-en.png`: independent feature panels.
   The English illustrations were created with the built-in image generator using
   their Hungarian counterparts as edit targets. Keep the ivory/green palette,
   Latin sample records and composition; translate interface labels only.
+- The four icon benefits appear once under the `#hozzaferes` introduction,
+  in `.access-benefits` (four columns on desktop, two on tablets, one on phones).
+  Do not duplicate them in the hero or add a parallel deliverables table.
 - Native `details name="catalogplus-faq"` provides an exclusive FAQ accordion.
 
 Edit copy in the language files. Keep initial Hungarian HTML consistent when
