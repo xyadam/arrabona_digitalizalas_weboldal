@@ -24,7 +24,7 @@ Only commit or push when explicitly requested by Adam.
 - `web_ocr/js/catalogplus.js`: language selection, localised images and native
   dialog image viewer. `?lang=hu` is Hungarian, `?lang=en` English. The query string
   preserves the language on refresh and in shared links; no cookies are needed.
-- Official logo masters: `../Konyvtari_Jegyzek_OCR_Search/assets/catalog_plus.svg` (icon only) and `catalog_plus_logo.svg` (with outlined lettering). Website copies use the same names in `web_ocr/img/`. Header/footer use the icon beside HTML text; keep that branding outside `data-i18n` replacement so language switching cannot remove the image. SVG/ICO favicon and PNG touch-icon copies come from the same client assets. Keep the established page design when updating branding.
+- Official logo masters: `../Konyvtari_Jegyzek_OCR_Search/assets/catalog_plus.svg` (icon only) and `catalog_plus_logo.svg` (with outlined lettering). Website copies use the same names in `web_ocr/img/`. Preserve their solid white interiors and white outline; transparency belongs only outside the logo. Header/footer use the icon beside HTML text; keep that branding outside `data-i18n` replacement so language switching cannot remove the image. SVG/ICO favicon and PNG touch-icon copies come from the same client assets. Keep the established page design when updating branding.
 - `web_ocr/img/app-hu.png`: original software screenshot, intentionally Hungarian
   in both languages. `archive.png` is the shared catalogue-drawer illustration.
 - `web_ocr/img/process-hu.png`, `process-en.png`: five-stage process illustrations,
